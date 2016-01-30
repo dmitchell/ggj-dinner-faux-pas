@@ -17,6 +17,38 @@
         <div class="person spin" id="hamlet"></div>
         <div class="person" id="ophelia"></div>
     
+        <div class="plate player"></div>
+        <div class="plate npc claudius"></div>
+        <div class="plate npc gertrude"></div>
+        <div class="plate npc hamlet"></div>
+        <div class="plate npc ophelia"></div>
+
+        <div class="knife player"></div>
+        <div class="knife npc claudius"></div>
+        <div class="knife npc gertrude"></div>
+        <div class="knife npc hamlet"></div>
+        <div class="knife npc ophelia"></div>
+
+        
+        <div class="fork player"></div>
+        <div class="fork npc claudius"></div>
+        <div class="fork npc gertrude"></div>
+        <div class="fork npc hamlet"></div>
+        <div class="fork npc ophelia"></div>
+
+        <div class="spoon player"></div>
+        <div class="spoon npc claudius"></div>
+        <div class="spoon npc gertrude"></div>
+        <div class="spoon npc hamlet"></div>
+        <div class="spoon npc ophelia"></div>
+
+        <div class="glass player"></div>
+        <div class="glass npc claudius"></div>
+        <div class="glass npc gertrude"></div>
+        <div class="glass npc hamlet"></div>
+        <div class="glass npc ophelia"></div>
+
+        
   </div>
 </body>
 
@@ -24,11 +56,14 @@
 <script>
     $(function(){
         
-        $(".person").click(clickPerson);
-        console.log("ok");
-    });
-    function clickPerson(){
+        $("#stage").click(clickStage);
         
+    });
+    function clickStage(e){
+        var parentOffset = $(this).parent().offset(); 
+        var relX = e.pageX - parentOffset.left;
+        var relY = e.pageY - parentOffset.top;
+   alert("left:"+relX+"px;\n"+"top:"+relY+"px;");
     }
     
 </script>

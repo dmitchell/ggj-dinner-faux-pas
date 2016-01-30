@@ -8,13 +8,15 @@ body {
 	width:800px;
 	height:600px;
 	background-color:#ffffdd;
-	position:relative;
+	position:absolute;
+	top:0px;left:0px;
 	overflow: hidden;
 	
 }
 #stage div {
 	position: absolute;
 	background-repeat:no-repeat;
+	transform-origin: 50% 50%;
 }
 
 
@@ -29,11 +31,11 @@ body {
 }
 
 .person {
-		width:203px;
+	width:203px;
 	height:379px;
 
 	z-index:50;
-	transform-origin: 50% 50%;
+	
 	cursor:pointer;
 	Xbackground-color: white;
 }
@@ -73,4 +75,205 @@ body {
 	background-size: 198px 559px;
 	
 }
+
+
+
+.plate {
+	background-image:url(empty_plate.png);
+	z-index: 150;
+	Xbackground-color:blue;
+	border-radius:400px/200px;
+}
+
+.plate.player {
+	width:342px;
+	height:227px;
+	background-size: 342px 227px;
+	top:350px;
+	left:220px;
+	z-index:162;
+	
+}
+
+.plate.npc {
+	width:91px;
+	height:60px;
+	background-size:91px 60px;	
+}
+
+.plate.ophelia {
+	top:330px;
+	left:85px;
+	Xtransform:rotate(135deg);
+}
+
+.plate.claudius {
+	top:280px;
+	left:270px;
+
+}
+.plate.gertrude {
+	left:456px;
+	top:280px;
+}
+.plate.hamlet {
+	left:620px;
+	top:320px;
+}
+
+
+
+
+.knife {
+	background-image:url(knife_sharp.png);
+	z-index: 152;
+	Xbackground-color:red;
+	Xborder-radius:400px/200px;
+}
+
+.knife.player {
+	width:52px;
+	height:242px;
+	background-size: 52px 242px;
+	top:350px;
+	left:555px;
+	z-index:160;
+}
+
+.knife.npc {
+	width:25px;
+	height:100px;
+	background-size:25px 100px;
+	.background
+}
+
+.knife.ophelia {
+	top:340px;
+	left:75px;
+	transform:rotate(135deg);
+	
+}
+
+
+.knife.claudius {
+	top:283px;
+	left:260px;
+	transform:rotate(150deg);
+
+}
+.knife.gertrude {
+	left:438px;
+	top:262px;
+	transform:rotate(195deg);
+}
+.knife.hamlet {
+	left:603px;
+	top:294px;
+	transform:rotate(195deg);
+}
+
+
+
+
+
+
+
+
+.spoon {
+	background-image:url(spoon.png);
+	z-index: 152;
+	
+	Xborder-radius:400px/200px;
+}
+
+.spoon.player {
+	width:72px;
+	height:222px;
+	background-size: 72px 222px;
+	top:380px;
+	left:600px;
+	z-index:160;
+}
+
+.spoon.npc {
+	width:30px;
+	height:100px;
+	background-size:30px 100px;
+	
+}
+
+.spoon.ophelia {
+	top:361px;
+	left:55px;
+	transform:rotate(135deg);
+}
+
+.spoon.claudius {
+	top:293px;
+	left:229px;
+	transform:rotate(150deg);
+}
+.spoon.gertrude {
+	left:406px;
+	top:260px;
+	transform:rotate(195deg);
+}
+.spoon.hamlet {
+	left:580px;
+	top:280px;
+	transform:rotate(195deg);
+}
+
+
+
+
+
+
+
+
+.fork {
+	background-image:url(fork_small.png);
+	z-index: 152;
+	Xbackground-color:red;
+	Xborder-radius:400px/200px;
+}
+
+.fork.player {
+	width:50px;
+	height:222px;
+	background-size: 50px 222px;
+	top:360px;
+	left:180px;
+	z-index:160;
+}
+
+.fork.npc {
+	width:25px;
+	height:111px;
+	background-size:25px 111px;	
+}
+
+.fork.ophelia {
+	top:286px;
+	left:180px;
+	transform:rotate(120deg);
+}
+
+.fork.claudius {
+	top:257px;
+	left:354px;
+transform:rotate(160deg);
+}
+.fork.gertrude {
+	left:540px;
+	top:280px;
+	transform:rotate(200deg);
+}
+.fork.hamlet {
+	left:700px;
+	top:325px;
+	transform:rotate(210deg);
+}
+
+
 
