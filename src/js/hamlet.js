@@ -11,7 +11,7 @@ var GAME_SETUP =
 		p: 1/15, // once per minute
 		actiontype: "dagger",
 		target: "all", // or all or player
-		effect: {claudius: [-0.04, 0], ophelia: [-0.05, 0], gertrude: [-0.02, 0]} // this model has the weakness
+		effect: {claudius: [-0.06, 0], ophelia: [-0.08, 0], gertrude: [-0.03, 0]} // this model has the weakness
 	     // that claudius's and gertrude's responses should be a function of 
              // their current state: if confused, then they may ignore the interaction.
              // if they are happy, then they should get confused not angry
@@ -23,7 +23,7 @@ var GAME_SETUP =
 	    	p: 1/15,
 	    	actiontype: "dagger",
 	    	target: "claudius",
-	    	effect: {claudius: [-0.02, 0]}
+	    	effect: {claudius: [-0.05, 0]}
 	    },
 	    dagger_self: {
 	    	happy: [.4, .69],
@@ -31,7 +31,7 @@ var GAME_SETUP =
 	    	p: 1/15,
 	    	actiontype: "dagger",
 	    	target: "hamlet",
-	    	effect: {hamlet: [-0.03, 0]}
+	    	effect: {hamlet: [-0.07, 0]}
 	    },
 	    heart_all: {
 	    	happy: [0.7, 1],
@@ -39,7 +39,7 @@ var GAME_SETUP =
 	    	p: 1/15,
 	    	actiontype: "heart",
 	    	target: "heart",
-	    	effect: {claudius: [0.04, 0], ophelia: [0.05, 0], gertrude: [0.02, 0]}
+	    	effect: {claudius: [0.06, 0], ophelia: [0.08, 0], gertrude: [0.03, 0]}
 	    },
 	    heart_ophelia: {
 	    	happy: [.7, 1],
@@ -47,7 +47,7 @@ var GAME_SETUP =
 	    	p: 1/15,
 	    	actiontype: "heart",
 	    	target: "ophelia",
-	    	effect: {ophelia: [.02, 0]}
+	    	effect: {ophelia: [.05, 0]}
 	    },
 	    sword: {
 		happy: [0, 0.05], // end game
@@ -63,7 +63,7 @@ var GAME_SETUP =
 		clarity: [0, 1.0],  // anytime
 		p: 1/(60 * 3), // once every 3 mins
 		target: "all",
-		effect: {ophelia: [0.1, 0], claudius: [0.05, 0], gertrude: [0.1, 0], hamlet: [0.05, 0]}
+		effect: {ophelia: [0.2, 0], claudius: [0.1, 0], gertrude: [0.2, 0], hamlet: [0.1, 0]}
 	    }
 	}
     },
@@ -105,7 +105,7 @@ var GAME_SETUP =
 		p: 1/15, // once per minute
 		actiontype: "dagger",
 		target: "all", // or all or player
-		effect: {hamlet: [-0.04, 0], ophelia: [-0.02, 0], gertrude: [-0.05, 0]} 
+		effect: {hamlet: [-0.06, 0], ophelia: [-0.03, 0], gertrude: [-0.08, 0]} 
 	    },
 	    dagger_hamlet: {
 	    	happy: [0, 0.39],
@@ -113,7 +113,7 @@ var GAME_SETUP =
 	    	p: 1/15,
 	    	actiontype: "dagger",
 	    	target: "hamlet",
-	    	effect: {hamlet: [-0.02, 0]}
+	    	effect: {hamlet: [-0.05, 0]}
 	    },
 	    dagger_self: {
 	    	happy: [.4, .69],
@@ -121,7 +121,7 @@ var GAME_SETUP =
 	    	p: 1/15,
 	    	actiontype: "dagger",
 	    	target: "claudius",
-	    	effect: {claudius: [-0.03, 0]}
+	    	effect: {claudius: [-0.07, 0]}
 	    },
 	    heart_all: {
 	    	happy: [0.7, 1],
@@ -129,7 +129,7 @@ var GAME_SETUP =
 	    	p: 1/15,
 	    	actiontype: "heart",
 	    	target: "heart",
-	    	effect: {hamlet: [0.04, 0], ophelia: [0.02, 0], gertrude: [0.05, 0]}
+	    	effect: {hamlet: [0.06, 0], ophelia: [0.03, 0], gertrude: [0.08, 0]}
 	    },
 	    heart_gertrude: {
 	    	happy: [.7, 1],
@@ -137,7 +137,7 @@ var GAME_SETUP =
 	    	p: 1/15,
 	    	actiontype: "heart",
 	    	target: "gertrude",
-	    	effect: {gertrude: [.02, 0]}
+	    	effect: {gertrude: [.05, 0]}
 	    },
 	    sword: {
 		happy: [0, 0.05], // end game
@@ -153,7 +153,7 @@ var GAME_SETUP =
 		clarity: [0, 1.0],  // anytime
 		p: 1/(60 * 3), // once every 3 mins
 		target: "all",
-		effect: {ophelia: [0.1, 0], claudius: [0.05, 0], gertrude: [0.1, 0], hamlet: [0.05, 0]}
+		effect: {ophelia: [0.2, 0], claudius: [0.1, 0], gertrude: [0.2, 0], hamlet: [0.1, 0]}
 	    }
 	}
     },
@@ -195,7 +195,7 @@ var GAME_SETUP =
 		p: 1/15, // once per minute
 		actiontype: "dagger",
 		target: "all", // or all or player
-		effect: {claudius: [-0.04, 0], gertrude: [-0.05, 0], hamlet: [-0.02, 0]} 
+		effect: {claudius: [-0.06, 0], gertrude: [-0.08, 0], hamlet: [-0.03, 0]} 
 	    },
 	    dagger_gertrude: {
 	    	happy: [0, 0.39],
@@ -203,7 +203,7 @@ var GAME_SETUP =
 	    	p: 1/15,
 	    	actiontype: "dagger",
 	    	target: "gertrude",
-	    	effect: {gertrude: [-0.02, 0]}
+	    	effect: {gertrude: [-0.05, 0]}
 	    },
 	    dagger_self: {
 	    	happy: [.4, .69],
@@ -211,7 +211,7 @@ var GAME_SETUP =
 	    	p: 1/15,
 	    	actiontype: "dagger",
 	    	target: "ophelia",
-	    	effect: {ophelia: [-0.03, 0]}
+	    	effect: {ophelia: [-0.07, 0]}
 	    },
 	    heart_all: {
 	    	happy: [0.7, 1],
@@ -219,7 +219,7 @@ var GAME_SETUP =
 	    	p: 1/15,
 	    	actiontype: "heart",
 	    	target: "heart",
-	    	effect: {claudius: [0.04, 0], gertrude: [0.05, 0], hamlet: [0.02, 0]}
+	    	effect: {claudius: [0.06, 0], gertrude: [0.08, 0], hamlet: [0.03, 0]}
 	    },
 	    heart_hamlet: {
 	    	happy: [.7, 1],
@@ -227,7 +227,7 @@ var GAME_SETUP =
 	    	p: 1/15,
 	    	actiontype: "heart",
 	    	target: "hamlet",
-	    	effect: {hamlet: [.02, 0], ophelia: [-0.01, 0]}
+	    	effect: {hamlet: [.05, 0], ophelia: [-0.03, 0]}
 	    },
 	    sword: {
 		happy: [0, 0.05], // end game
@@ -243,7 +243,7 @@ var GAME_SETUP =
 		clarity: [0, 1.0],  // anytime
 		p: 1/(60 * 3), // once every 3 mins
 		target: "all",
-		effect: {ophelia: [0.05, 0], claudius: [0.1, 0], gertrude: [0.05, 0], hamlet: [0.1, 0]}
+		effect: {ophelia: [0.1, 0], claudius: [0.2, 0], gertrude: [0.1, 0], hamlet: [0.2, 0]}
 	    }
 	}
     },
@@ -285,7 +285,7 @@ var GAME_SETUP =
 		p: 1/15, // once per minute
 		actiontype: "dagger",
 		target: "all", // or all or player
-		effect: {hamlet: [-0.02, 0], ophelia: [-0.04, 0], claudius: [-0.05, 0]} 
+		effect: {hamlet: [-0.03, 0], ophelia: [-0.06, 0], claudius: [-0.08, 0]} 
 	    },
 	    dagger_ophelia: {
 	    	happy: [0, 0.39],
@@ -293,7 +293,7 @@ var GAME_SETUP =
 	    	p: 1/15,
 	    	actiontype: "dagger",
 	    	target: "ophelia",
-	    	effect: {ophelia: [-0.02, 0]}
+	    	effect: {ophelia: [-0.05, 0]}
 	    },
 	    dagger_self: {
 	    	happy: [.4, .69],
@@ -301,7 +301,7 @@ var GAME_SETUP =
 	    	p: 1/15,
 	    	actiontype: "dagger",
 	    	target: "gertrude",
-	    	effect: {gertrude: [-0.03, 0]}
+	    	effect: {gertrude: [-0.07, 0]}
 	    },
 	    heart_all: {
 	    	happy: [0.7, 1],
@@ -309,7 +309,7 @@ var GAME_SETUP =
 	    	p: 1/15,
 	    	actiontype: "heart",
 	    	target: "heart",
-	    	effect: {hamlet: [0.02, 0], ophelia: [0.04, 0], claudius: [0.05, 0]}
+	    	effect: {hamlet: [0.03, 0], ophelia: [0.06, 0], claudius: [0.08, 0]}
 	    },
 	    heart_claudius: {
 	    	happy: [.7, 1],
@@ -317,7 +317,7 @@ var GAME_SETUP =
 	    	p: 1/15,
 	    	actiontype: "heart",
 	    	target: "claudius",
-	    	effect: {claudius: [.02, 0]}
+	    	effect: {claudius: [.05, 0]}
 	    },
 	    sword: {
 		happy: [0, 0.05], // end game
@@ -333,7 +333,7 @@ var GAME_SETUP =
 		clarity: [0, 1.0],  // anytime
 		p: 1/(60 * 3), // once every 3 mins
 		target: "all",
-		effect: {ophelia: [0.05, 0], claudius: [0.1, 0], gertrude: [0.05, 0], hamlet: [0.1, 0]}
+		effect: {ophelia: [0.1, 0], claudius: [0.2, 0], gertrude: [0.1, 0], hamlet: [0.2, 0]}
 	    }
 	}
     },
