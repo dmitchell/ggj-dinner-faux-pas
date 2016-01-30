@@ -9,8 +9,9 @@ var GLOBALS = {
 $(document).ready(function(){
     // initialize course
     for (var course in GAME_SETUP.course) {
-	if (start == 0) {
+	if (GAME_SETUP.course[course].start == 0) {
 	    GLOBALS.course = course;
+	    listLog("set course to " + course);
 	}
     }
     // initialize npcs
@@ -29,13 +30,14 @@ function gogogo(){
     }
     // check course transition
     GLOBALS.time++;
-    if (GLOBALS.time > GAME_SETUP.course[course].end) {
+    if (GLOBALS.time > GAME_SETUP.course[GLOBALS.course].end) {
 	// find next course
 	for (var course in GAME_SETUP.course) {
 	    if (GAME_SETUP.course[course].start < GLOBALS.time &&
 		GAME_SETUP.course[course].end > GLOBALS.time) {
 		GLOBALS.course = course;
 		// TODO draw course transition
+		listLog("Change course to " + course);
 	    }
 	}
     }

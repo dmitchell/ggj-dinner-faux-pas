@@ -43,7 +43,7 @@ var GAME_SETUP =
   ]
  }
  },
- {course: {
+ course: {
      drinks: {
 	 start: 0, end: 45 // 0..45 seconds
 	 // image: drink.jpg,
