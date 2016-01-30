@@ -21,43 +21,56 @@ body {
 #table {
 	background-image:url(table.png);
 	left:0px;
-	top:200px;
+	top:250px;
 	width:800px;
 	height:480px;
 	z-index:75;
-	background-color:red;
+	border-radius:1200px / 300px;
 }
 
 .person {
-	width:203px;
+		width:203px;
 	height:379px;
-	
+
 	z-index:50;
 	transform-origin: 50% 50%;
 	cursor:pointer;
-	transform:rotate(20deg);
+	Xbackground-color: white;
 }
 
 
 #claudius{
-	background-image:url(claudius.png);
-	top:50px;
+	background-image:url(claudius-start.png);
+	top:10px;
 	left:150px;
+	width:233px;
+	height:577px;
+	background-size:233px 577px;
+	transform: scaleX(-1);
 }
 #gertrude{
-	background-image:url(gertrude.png);		
-	top:50px;
+	background-image:url(gertrude-start.png);		
+	top:10px;
 	left:370px;
-
+	width:311px;
+	height:547px;
+	background-size:311px 547px;
 }
 #hamlet{
-	background-image:url(hamlet.png);
-	top:100px;
+	width:205px;
+	height:600px;	
+	background-image:url(hamlet-start.png);
+	background-size: 205px 600px;
+	top:10px;
 	left:600px;
 }
 #ophelia{
-	background-image:url(ophelia.png);
-	top:100px;
-	left:0px;	
+	background-image:url(ophelia-start.png);
+	top:40px;
+	left:0px;
+	width:198px;
+	height:559px;
+	background-size: 198px 559px;
+	transform: scaleX(-1);
 }
 
