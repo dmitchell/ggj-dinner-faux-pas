@@ -37,7 +37,7 @@ Player.prototype.course = function(course) {
     this.utensil = null;
 }
 
-Player.prototype.holding_utensil(needed) {
+Player.prototype.holding_utensil = function(needed) {
     return (needed == undefined || this.utensil == needed);
 }
 

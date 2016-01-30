@@ -3,7 +3,7 @@ var GLOBALS = {
     npcs: {},
     course: null,
     time: 0,
-    player: new Player(),
+    player: null,
 }
 
 
@@ -19,6 +19,7 @@ $(document).ready(function(){
     for (var actor in GAME_SETUP.npc) {
 	new NPC(actor, GAME_SETUP.npc[actor]);
     }
+    GLOBALS.player = new Player();
     // initialize player
     gogogo();
 });
