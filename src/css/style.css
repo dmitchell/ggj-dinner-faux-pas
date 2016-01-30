@@ -1,3 +1,10 @@
 body {
 	font-family:arial,helvetica,sans-serif;
 }
+
+
+#stage {
+	border:1px dashed black;
+	width:500px;
+	height:500px;
+}
