@@ -1,13 +1,13 @@
 var GAME_SETUP = 
 {npc:{ 
  hamlet: 
-   {happy: .6, // starting value scale 0..1
+   {happy: .61, // starting value scale 0..1
     clarity: .3,
     operations: {
 	anytime: {
 	    dagger_all: {
-		happy: [0, 0.39], // if happiness between these
-		clarity: [0, 0.39],
+		happy: [0, 0.399], // if happiness between these
+		clarity: [0, 0.399],
 		p: 1/2, // once per minute
 		actiontype: "dagger",
 		target: "all", // or all or player
@@ -18,7 +18,7 @@ var GAME_SETUP =
              // if they are angry, it should amplify
 	    },
 	    dagger_claudius: {
-	    	happy: [0, 0.39],
+	    	happy: [0, 0.399],
 	    	clarity: [0.7, 1],
 	    	p: 1/2,
 	    	actiontype: "dagger",
@@ -26,8 +26,8 @@ var GAME_SETUP =
 	    	effect: {claudius: [-0.05, 0]}
 	    },
 	    dagger_self: {
-	    	happy: [.4, .69],
-	    	clarity: [0, .39],
+	    	happy: [.4, .699],
+	    	clarity: [0, .399],
 	    	p: 1/2,
 	    	actiontype: "dagger",
 	    	target: "hamlet",
@@ -43,7 +43,7 @@ var GAME_SETUP =
 	    },
 	    heart_ophelia: {
 	    	happy: [.7, 1],
-	    	clarity: [.4, .69],
+	    	clarity: [.4, .699],
 	    	p: 1/2,
 	    	actiontype: "heart",
 	    	target: "ophelia",
@@ -70,17 +70,17 @@ var GAME_SETUP =
   appearance: [
       // which image to use for each happiness x clarity range
   {
-    happy: [0, .39],
-    clarity: [0, .39],
+    happy: [0, .399],
+    clarity: [0, .399],
     image: "hamlet_angry.jpg"
   },
   {
   	happy: [.7, 1],
-  	clarity: [0, .39],
+  	clarity: [0, .399],
   	image: "hamlet_confused.jpg"
   },
   {
-  	happy: [0, .39],
+  	happy: [0, .399],
   	clarity: [.7, 1],
   	image: "hamlet_suspicious.jpg"
   },
@@ -100,15 +100,15 @@ var GAME_SETUP =
     operations: {
 	anytime: {
 	    dagger_all: {
-		happy: [0, 0.39], // if happiness between these
-		clarity: [0, 0.39],
+		happy: [0, 0.399], // if happiness between these
+		clarity: [0, 0.399],
 		p: 1/2, // once per minute
 		actiontype: "dagger",
 		target: "all", // or all or player
 		effect: {hamlet: [-0.06, 0], ophelia: [-0.03, 0], gertrude: [-0.08, 0]} 
 	    },
 	    dagger_hamlet: {
-	    	happy: [0, 0.39],
+	    	happy: [0, 0.399],
 	    	clarity: [0.7, 1],
 	    	p: 1/2,
 	    	actiontype: "dagger",
@@ -116,8 +116,8 @@ var GAME_SETUP =
 	    	effect: {hamlet: [-0.05, 0]}
 	    },
 	    dagger_self: {
-	    	happy: [.4, .69],
-	    	clarity: [0, .39],
+	    	happy: [.4, .699],
+	    	clarity: [0, .399],
 	    	p: 1/60,
 	    	actiontype: "dagger",
 	    	target: "claudius",
@@ -133,7 +133,7 @@ var GAME_SETUP =
 	    },
 	    heart_gertrude: {
 	    	happy: [.7, 1],
-	    	clarity: [.4, .69],
+	    	clarity: [.4, .699],
 	    	p: 1/2,
 	    	actiontype: "heart",
 	    	target: "gertrude",
@@ -160,17 +160,17 @@ var GAME_SETUP =
   appearance: [
       // which image to use for each happiness x clarity range
   {
-    happy: [0, .39],
-    clarity: [0, .39],
+    happy: [0, .399],
+    clarity: [0, .399],
     image: "claudius_angry.jpg"
   },
   {
   	happy: [.7, 1],
-  	clarity: [0, .39],
+  	clarity: [0, .399],
   	image: "claudius_confused.jpg"
   },
   {
-  	happy: [0, .39],
+  	happy: [0, .399],
   	clarity: [.7, 1],
   	image: "claudius_suspicious.jpg"
   },
@@ -190,15 +190,15 @@ var GAME_SETUP =
     operations: {
 	anytime: {
 	    dagger_all: {
-		happy: [0, 0.39], // if happiness between these
-		clarity: [0, 0.39],
+		happy: [0, 0.399], // if happiness between these
+		clarity: [0, 0.399],
 		p: 1/2, // once per minute
 		actiontype: "dagger",
 		target: "all", // or all or player
 		effect: {claudius: [-0.06, 0], gertrude: [-0.08, 0], hamlet: [-0.03, 0]} 
 	    },
 	    dagger_gertrude: {
-	    	happy: [0, 0.39],
+	    	happy: [0, 0.399],
 	    	clarity: [0.7, 1],
 	    	p: 1/2,
 	    	actiontype: "dagger",
@@ -206,8 +206,8 @@ var GAME_SETUP =
 	    	effect: {gertrude: [-0.05, 0]}
 	    },
 	    dagger_self: {
-	    	happy: [.4, .69],
-	    	clarity: [0, .39],
+	    	happy: [.4, .699],
+	    	clarity: [0, .399],
 	    	p: 1/2,
 	    	actiontype: "dagger",
 	    	target: "ophelia",
@@ -223,7 +223,7 @@ var GAME_SETUP =
 	    },
 	    heart_hamlet: {
 	    	happy: [.7, 1],
-	    	clarity: [.4, .69],
+	    	clarity: [.4, .699],
 	    	p: 1/2,
 	    	actiontype: "heart",
 	    	target: "hamlet",
@@ -250,17 +250,17 @@ var GAME_SETUP =
   appearance: [
       // which image to use for each happiness x clarity range
   {
-    happy: [0, .39],
-    clarity: [0, .39],
+    happy: [0, .399],
+    clarity: [0, .399],
     image: "ophelia_angry.jpg"
   },
   {
   	happy: [.7, 1],
-  	clarity: [0, .39],
+  	clarity: [0, .399],
   	image: "ophelia_confused.jpg"
   },
   {
-  	happy: [0, .39],
+  	happy: [0, .399],
   	clarity: [.7, 1],
   	image: "ophelia_suspicious.jpg"
   },
@@ -280,15 +280,15 @@ var GAME_SETUP =
     operations: {
 	anytime: {
 	    dagger_all: {
-		happy: [0, 0.39], // if happiness between these
-		clarity: [0, 0.39],
+		happy: [0, 0.399], // if happiness between these
+		clarity: [0, 0.399],
 		p: 1/2, // once per minute
 		actiontype: "dagger",
 		target: "all", // or all or player
 		effect: {hamlet: [-0.03, 0], ophelia: [-0.06, 0], claudius: [-0.08, 0]} 
 	    },
 	    dagger_ophelia: {
-	    	happy: [0, 0.39],
+	    	happy: [0, 0.399],
 	    	clarity: [0.7, 1],
 	    	p: 1/2,
 	    	actiontype: "dagger",
@@ -296,8 +296,8 @@ var GAME_SETUP =
 	    	effect: {ophelia: [-0.05, 0]}
 	    },
 	    dagger_self: {
-	    	happy: [.4, .69],
-	    	clarity: [0, .39],
+	    	happy: [.4, .699],
+	    	clarity: [0, .399],
 	    	p: 1/2,
 	    	actiontype: "dagger",
 	    	target: "gertrude",
@@ -313,7 +313,7 @@ var GAME_SETUP =
 	    },
 	    heart_claudius: {
 	    	happy: [.7, 1],
-	    	clarity: [.4, .69],
+	    	clarity: [.4, .699],
 	    	p: 1/2,
 	    	actiontype: "heart",
 	    	target: "claudius",
@@ -340,17 +340,17 @@ var GAME_SETUP =
   appearance: [
       // which image to use for each happiness x clarity range
   {
-    happy: [0, .39],
-    clarity: [0, .39],
+    happy: [0, .399],
+    clarity: [0, .399],
     image: "gertrude_angry.jpg"
   },
   {
   	happy: [.7, 1],
-  	clarity: [0, .39],
+  	clarity: [0, .399],
   	image: "gertrude_confused.jpg"
   },
   {
-  	happy: [0, .39],
+  	happy: [0, .399],
   	clarity: [.7, 1],
   	image: "gertrude_suspicious.jpg"
   },
