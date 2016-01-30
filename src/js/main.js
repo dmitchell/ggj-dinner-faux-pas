@@ -7,16 +7,38 @@ var GLOBALS = {
 
 
 $(document).ready(function(){
-    // TODO initialize course
-    
-    // TODO initialize npcs
-    // TODO initialize player
+    // initialize course
+    for (var course in GAME_SETUP.course) {
+	if (start == 0) {
+	    GLOBALS.course = course;
+	}
+    }
+    // initialize npcs
+    for (var actor in GAME_SETUP.npc) {
+	new NPC(actor, GAME_SETUP.npc[actor]);
+    }
+    // initialize player
+    gogogo();
 });
 
 
 function gogogo(){
-    // TODO check course transition
-    // TODO move each player
+    // move each player
+    for (var npc in GLOBALS.npcs) {
+	GLOBALS.npcs[npc].move();
+    }
+    // check course transition
+    GLOBALS.time++;
+    if (GLOBALS.time > GAME_SETUP.course[course].end) {
+	// find next course
+	for (var course in GAME_SETUP.course) {
+	    if (GAME_SETUP.course[course].start < GLOBALS.time &&
+		GAME_SETUP.course[course].end > GLOBALS.time) {
+		GLOBALS.course = course;
+		// TODO draw course transition
+	    }
+	}
+    }
 }
 
 function listLog(msg){

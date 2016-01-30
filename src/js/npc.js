@@ -4,10 +4,17 @@ var NPC = function(name, descriptor) {
     this.clarity = descriptor.clarity || .6;
     // TODO normalize probabilities??
     this.operations = descriptor.operations;
+    // set action and source properties
+    for (var course in this.operations) {
+	for (var action in this.operations[course]) {
+	    this.operations[course][action].action = action;
+	    this.operations[course][action].source = this.name;
+	}
+    }
     this.topic = null;
     GLOBALS.npcs[name] = this;
     // TODO draw npc
-
+    showState(this);
 }
 
 // figures out what if any moves this npc makes in this cycle
@@ -20,9 +27,8 @@ NPC.prototype.move = function() {
 	    var op = phaseOps[operator];
 	    // if happiness and clarity and random
 	    if (this.gate(op) && Math.random() < op.p) {
-		// TODO invoke graphics (use target property)
-		// TODO possibly end game if target=="end"
-
+		// invoke graphics (use target property)
+		showAction(op);
 		// affect each target
 		for (var target in op.effect) {
 		    GLOBALS.npcs[target].react(op.effect[target]);
@@ -57,5 +63,6 @@ NPC.prototype.react = function(effect) {
     if (effect[this.name].length > 2) {
 	this.topic = effect[this.name][2];
     }
-    // TODO invoke character image change
+    // invoke character image change
+    showState(this);
 }
