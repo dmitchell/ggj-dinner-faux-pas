@@ -6,7 +6,13 @@
 
 
 
-function display(cmd){
-    console.log("in art display");
+function showState(cmd){
+    console.log("in art showState");
     console.log(cmd);
+}
+
+function showAction(cmd){
+    console.log("in art showAction");
+    console.log(cmd);
+
 }
