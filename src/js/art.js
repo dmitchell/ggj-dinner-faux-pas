@@ -97,3 +97,10 @@ function displaySpeech(who,topic){
                     <div class="susp"></div>*/
 }
 
+
+function clickStage(e){
+    alert("class:"+$(this).attr("class")+"\nid:"+$(this).attr('id'));
+    
+}
+    
+

@@ -1,0 +1,21 @@
+npc speech
+* add actions to hamlet.js
+* write showAction
+** show topic
+** show emoticons
+** set event to remove speech baloon
+** on removal, set npc.topic to null
+
+player speech
+* click and execute effect
+
+player use utensils
+* wire up
+
+end game
+* art for each NPC
+** Hamlet: raised sword toward Claudius
+** Claudius: raised sword toward Hamlet
+** Gertrude: knife at player
+** Ophelia: suicide
+* configure hamlet.js
