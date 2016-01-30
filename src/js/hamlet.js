@@ -49,6 +49,11 @@ var GAME_SETUP =
 	    	target: "ophelia",
 	    	effect: {ophelia: [.05, 0]}
 	    },
+	    talk: {
+	    	p: 1/15,
+	    	actiontype: "talk",
+	    	target: "player",
+	    }
 	    sword: {
 		happy: [0, 0.05], // end game
 		p: 0.5, // almost certain to occur in 5 seconds (1 - 0.5^5)
