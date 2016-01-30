@@ -56,16 +56,16 @@ NPC.prototype.gate = function(operator) {
 
 NPC.prototype.react = function(effect) {
     // TODO handle overflow/underflow by adjusting alternate dimension?
-    this.happy += effect[this.name][0];  // should this be *=?
+    this.happy += effect[0];  // should this be *=?
     if (this.happy > 1) { this.happy = 1; }
-    this.clarity += effect[this.name][1];
+    this.clarity += effect[1];
     if (this.clarity < 0) {
 	this.clarity = 0;
     } else if (this.clarity > 1) {
 	this.clarity = 1;
     }
-    if (effect[this.name].length > 2) {
-	this.topic = effect[this.name][2];
+    if (effect.length > 2) {
+	this.topic = effect[2];
     }
     // invoke character image change
     showState(this);
