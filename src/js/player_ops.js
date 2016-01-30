@@ -24,8 +24,45 @@ var PLAYER_OPS = {
 		gertrude: [-0.2, 0]
 	},
 	{course: "first",
-	}
-	
+	utensil: "fork",
+	effect: {
+		gertrude: [0, -0.3]
+	},
+	{course: "first",
+	utensil: "knife",
+	effect: {
+		gertrude: [0, -0.2]
+	},
+	{course: "first",
+	utensil: "spoon",
+	effect: {
+		gertrude: [0.3, 0.3]
+	},
+	{course: "first",
+	utensil: null,
+	effect: {
+		gertrude: [-0.4, 0]
+	},
+	{course: "second",
+	utensil: "fork",
+	effect: {
+		gertrude: [0.3, 0.3]
+	},
+	{course: "second",
+	utensil: "knife",
+	effect: {
+		gertrude: [0, -0.2]
+	},
+	{course: "second",
+	utensil: "spoon",
+	effect: {
+		gertrude: [0, -0.2]
+	},
+	{course: "second",
+	utensil: null,
+	effect: {
+		gertrude: [-0.3, 0]
+	},
 	],
 	fork: [{
 	    effect: {
