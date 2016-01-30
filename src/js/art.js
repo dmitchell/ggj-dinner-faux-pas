@@ -79,8 +79,11 @@ function displayCourse(courseName){
         $food.css("left",$playerplate.css("left"));
         $stage.append($food);
 
+        $food.click(clickStage);
     
 }
+
+
 
 
 function displaySpeech(who,topic){
