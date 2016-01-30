@@ -186,7 +186,7 @@ var GAME_SETUP =
  },
  ophelia: 
    {happy: .9, // starting value scale 0..1
-    clarity: .6,
+    clarity: .5,
     operations: {
 	anytime: {
 	    dagger_all: {
@@ -227,7 +227,7 @@ var GAME_SETUP =
 	    	p: 1/60,
 	    	actiontype: "heart",
 	    	target: "hamlet",
-	    	effect: {hamlet: [.02, 0]}
+	    	effect: {hamlet: [.02, 0], ophelia: [-0.01, 0]}
 	    },
 	    sword: {
 		happy: [0, 0.05], // end game
