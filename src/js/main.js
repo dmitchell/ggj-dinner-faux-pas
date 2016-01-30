@@ -38,6 +38,7 @@ function gogogo(){
 		GLOBALS.course = course;
 		// TODO draw course transition
 		listLog("Change course to " + course);
+                displayCourse(course);
 		if (course == "successful") {
 		    listLog("Game over. You survived!");
 		    return;

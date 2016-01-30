@@ -16,3 +16,7 @@ function showAction(cmd){
     console.log(cmd);
 
 }
+
+function displayCourse(courseName){
+    
+}
