@@ -282,11 +282,11 @@ var GAME_SETUP =
      first: {
 	 start: 45, end: 105
      },
-     main: {
-	 start: 105, end: 195
+     second: {
+	 start: 105, end: 165
      },
      dessert: {
-	 start: 195, end: 240
+	 start: 165, end: 240
      },
      successful: {
      	start: 240
