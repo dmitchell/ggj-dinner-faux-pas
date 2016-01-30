@@ -3,6 +3,7 @@ var GLOBALS = {
     npcs: {},
     course: null,
     time: 0,
+    player: new Player(),
 }
 
 
@@ -48,6 +49,10 @@ function gogogo(){
 	}
     }
     setTimeout(gogogo,GLOBALS.baseinterval);
+}
+
+function in_course(needed) {
+    return (needed == undefined || GLOBALS.course == needed);
 }
 
 function listLog(msg){
