@@ -86,14 +86,14 @@ var PLAYER_OPS = {
 	    topic: "food",
 	    emoticon: "excited",
 	    effect: {
-		hamlet: [-0.1, 0]
+		hamlet: [0, 0.1]
 	    },
 	    {
 	    speaker: "hamlet",
 	    topic: "food",
 	    emoticon: "confused",
 	    effect: {
-		hamlet: [-0.1, 0]
+		hamlet: [0.1, 0]
 	    },
 	    {
 	    speaker: "hamlet",
@@ -107,14 +107,14 @@ var PLAYER_OPS = {
 	    topic: "food",
 	    emoticon: "suspicious",
 	    effect: {
-		hamlet: [-0.1, 0]
+		hamlet: [0.1, 0]
 	    },
 	    {
 	    speaker: "hamlet",
 	    topic: "food",
 	    emoticon: "angry",
 	    effect: {
-		hamlet: [-0.1, 0]
+		hamlet: [0, -0.1]
 	    }
 	    
 	}
