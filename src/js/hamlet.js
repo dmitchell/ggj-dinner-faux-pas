@@ -47,22 +47,22 @@ var GAME_SETUP =
     happy: [0, .39],
     clarity: [0, .39],
     image: "hamlet_angry.jpg"
-  }
+  },
   {
   	happy: [.7, 1],
   	clarity: [0, .39],
   	image: "hamlet_confused.jpg"
-  }
+  },
   {
   	happy: [0, .39],
   	clarity: [.7, 1],
   	image: "hamlet_suspicious.jpg"
-  }
+  },
   {
   	happy: [.7, 1],
   	clarity: [.7, 1],
   	image: "hamlet_excited.jpg"
-  }
+  },
   {
   	image: "hamlet_neutral.jpg"
   }
@@ -115,22 +115,22 @@ var GAME_SETUP =
     happy: [0, .39],
     clarity: [0, .39],
     image: "claudius_angry.jpg"
-  }
+  },
   {
   	happy: [.7, 1],
   	clarity: [0, .39],
   	image: "claudius_confused.jpg"
-  }
+  },
   {
   	happy: [0, .39],
   	clarity: [.7, 1],
   	image: "claudius_suspicious.jpg"
-  }
+  },
   {
   	happy: [.7, 1],
   	clarity: [.7, 1],
   	image: "claudius_excited.jpg"
-  }
+  },
   {
   	image: "claudius_neutral.jpg"
   }
@@ -271,7 +271,8 @@ var GAME_SETUP =
   	image: "gertrude_neutral.jpg"
   }
   ]
- },
+ }
+},
  course: {
      drinks: {
 	 start: 0, end: 45 // 0..45 seconds
@@ -286,9 +287,10 @@ var GAME_SETUP =
      },
      dessert: {
 	 start: 195, end: 240
-     }
+     },
      successful: {
      	start: 240
      }
    }
 }
+
