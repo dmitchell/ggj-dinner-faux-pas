@@ -13,7 +13,7 @@ var NPC = function(name, descriptor) {
     }
     this.topic = null;
     GLOBALS.npcs[name] = this;
-    // TODO draw npc
+    // draw npc
     showState(this);
 }
 

@@ -38,6 +38,10 @@ function gogogo(){
 		GLOBALS.course = course;
 		// TODO draw course transition
 		listLog("Change course to " + course);
+		if (course == "successful") {
+		    listLog("Game over. You survived!");
+		    return;
+		}
 	    }
 	}
     }
@@ -45,5 +49,5 @@ function gogogo(){
 }
 
 function listLog(msg){
-    $("#msglist").append("<li>"+msg+"</li>");
+    console.log(msg);
 }
