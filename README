@@ -16,15 +16,15 @@ Your behavior affects each NPC as well as yourself. Faux pas increase NPC confus
 
 Representation:
 
-```
+```javascript
 {npc: 
  {hamlet: 
    {happy: .4, // starting value scale 0..1
-    gets_it: .5,
-    operations: [
+    clarity: .5,
+    operations: 
+      {drinks: [
        {happy: [.2, .6], // if happiness between these
-        phase: drinks, // optional field which ties to game phases
-        gets_it: [.4, 1.0],
+        clarity: [.4, 1.0],
         p: 0.1,
         target: claudius, // or all or player
         action: dagger_emote,
@@ -34,8 +34,10 @@ Representation:
              // if they are happy, then they should get confused not angry
              // if they are angry, it should amplify
        },
-    ...
-    ]
+       ...
+     ],
+    {anytime: // things which can happen anytime
+       }
   appearance: [
   {
     happy: [0, .1],
@@ -44,7 +46,7 @@ Representation:
   ]
  }..
  },
-{phase:
+{course:
    {drinks:
      {start: 0, end: 45, // 0..45 seconds
       image: drink.jpg,
