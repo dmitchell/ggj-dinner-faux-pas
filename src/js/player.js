@@ -25,14 +25,17 @@ Player.prototype.perform = function(selection) {
 
 Player.prototype.speak = function(target, emoticon) {
     var speaker = GLOBALS.npcs[target];
+    var speechDecl = this.speech[speaker];
+    if (speechDecl == undefined) return;
+    
     var topic = speaker.topic;
-    for (var speech in this.speech) {
-	if ((speech.speaker == undefined || speech.speaker == speaker) &&
-	    (speech.topic == undefined || speech.topic == topic) &&
-	    (speech.emoticon == emoticon)) {
-	    for (var target in speech.effect) {
-		GLOBALS.npcs[target].react(speech.effect[target]);
-	    }
+    speechDecl = speechDecl[topic];
+    if (speechDecl == undefined) return;
+
+    speechDecl = speechDecl[emoticon];
+    if (speechDecl != undefined) {
+	for (var target in speechDecl) {
+	    GLOBALS.npcs[target].react(speech.effect[target]);
 	}
     }
 }

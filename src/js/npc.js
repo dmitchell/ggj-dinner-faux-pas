@@ -34,6 +34,8 @@ NPC.prototype.moveInternal = function(phase) {
 	// if happiness and clarity and random
 	if (this.gate(op) && Math.random() < op.p) {
 	    if (op.actiontype == "talk") {
+		if (this.topic == null) continue;
+
 		this.topic = op.topic = this.topics[Math.random() * 6];
 	    }
 	    // invoke graphics (use target property)

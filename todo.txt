@@ -3,6 +3,8 @@ npc speech
 * write showAction
 ** show topic
 ** show emoticons
+** set event to remove speech baloon
+** on removal, set npc.topic to null
 
 player speech
 * click and execute effect
