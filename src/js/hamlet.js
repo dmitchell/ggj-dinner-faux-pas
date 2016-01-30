@@ -38,7 +38,7 @@ var GAME_SETUP =
 	    	clarity: [0.7, 1],
 	    	p: 1/60,
 	    	actiontype: "heart",
-	    	target: "heart",
+	    	target: "all",
 	    	effect: {claudius: [0.06, 0], ophelia: [0.08, 0], gertrude: [0.03, 0]}
 	    },
 	    heart_ophelia: {
@@ -128,7 +128,7 @@ var GAME_SETUP =
 	    	clarity: [0.7, 1],
 	    	p: 1/60,
 	    	actiontype: "heart",
-	    	target: "heart",
+	    	target: "all",
 	    	effect: {hamlet: [0.06, 0], ophelia: [0.03, 0], gertrude: [0.08, 0]}
 	    },
 	    heart_gertrude: {
@@ -218,7 +218,7 @@ var GAME_SETUP =
 	    	clarity: [0.7, 1],
 	    	p: 1/60,
 	    	actiontype: "heart",
-	    	target: "heart",
+	    	target: "all",
 	    	effect: {claudius: [0.06, 0], gertrude: [0.08, 0], hamlet: [0.03, 0]}
 	    },
 	    heart_hamlet: {
@@ -308,7 +308,7 @@ var GAME_SETUP =
 	    	clarity: [0.7, 1],
 	    	p: 1/60,
 	    	actiontype: "heart",
-	    	target: "heart",
+	    	target: "all",
 	    	effect: {hamlet: [0.03, 0], ophelia: [0.06, 0], claudius: [0.08, 0]}
 	    },
 	    heart_claudius: {
