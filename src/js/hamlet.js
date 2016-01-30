@@ -170,7 +170,7 @@ var GAME_SETUP =
   	image: "claudius_confused.jpg"
   },
   {
-  	happy: [0, .4,
+  	happy: [0, .4],
   	clarity: [.7, 1],
   	image: "claudius_suspicious.jpg"
   },
