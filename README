@@ -1,0 +1,15 @@
+Dinner faux pas Shakesperian.
+
+You are a guest at a dinner of Shakesperian characters. You do not know the characters, but the game is designed around them. For example, you may be eating dinner with Hamlet, Claudius, Gertrude, and Ophelia. Your actions may exacerbate or ameliorate their animosities and suicidal ideation.
+
+You actions are toasting, speaking (with emoticons), getting food and drink, using utensils, eating and drinking.
+
+The NPC's interact with each other and you. Their actions are the same as yours; however, they have individual biases. For example, Hamlet will direct angry statements to Claudius if he's not completely happy. Successful angry barbs make him angrier.
+
+Basic engineering design
+
+Each NPC is a separate object. Each NPC has 2 scales: anger-happiness, and confusion-clarity. As they get to the extremes of the anger-happiness scale, their interactions increase. At the happiest level, they interact with everyone or with those they like. At the angriest level, they interact with the one they hate (or shut up completely).
+
+The external environment also has events such as the courses coming out.
+
+Your behavior affects each NPC as well as yourself. Faux pas increase NPC confusion or defuse NPC. Interventions can exacerbate or ameliorate anger.
