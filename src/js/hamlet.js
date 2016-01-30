@@ -1,7 +1,7 @@
 var GAME_SETUP = 
 {npc:{ 
  hamlet: 
-   {happy: .61, // starting value scale 0..1
+   {happy: .65, // starting value scale 0..1
     clarity: .3,
     operations: {
 	anytime: {
