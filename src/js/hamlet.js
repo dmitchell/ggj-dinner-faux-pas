@@ -25,6 +25,14 @@ var GAME_SETUP =
 	    	target: "claudius",
 	    	effect: {claudius: [-0.02, 0]}
 	    },
+	    dagger_self: {
+	    	happy: [.4, .69],
+	    	clarity: [0, .39],
+	    	p: 1/60,
+	    	actiontype: "dagger",
+	    	target: "hamlet",
+	    	effect: {hamlet: [-0.03, 0]}
+	    },
 	    heart_all: {
 	    	happy: [0.7, 1],
 	    	clarity: [0.7, 1],
@@ -107,6 +115,22 @@ var GAME_SETUP =
 	    	target: "hamlet",
 	    	effect: {hamlet: [-0.02, 0]}
 	    },
+	    dagger_self: {
+	    	happy: [.4, .69],
+	    	clarity: [0, .39],
+	    	p: 1/60,
+	    	actiontype: "dagger",
+	    	target: "claudius",
+	    	effect: {claudius: [-0.03, 0]}
+	    },
+	    heart_all: {
+	    	happy: [0.7, 1],
+	    	clarity: [0.7, 1],
+	    	p: 1/60,
+	    	actiontype: "heart",
+	    	target: "heart",
+	    	effect: {hamlet: [0.04, 0], ophelia: [0.02, 0], gertrude: [0.05, 0]}
+	    },
 	    heart_gertrude: {
 	    	happy: [.7, 1],
 	    	clarity: [.4, .69],
@@ -181,6 +205,22 @@ var GAME_SETUP =
 	    	target: "gertrude",
 	    	effect: {gertrude: [-0.02, 0]}
 	    },
+	    dagger_self: {
+	    	happy: [.4, .69],
+	    	clarity: [0, .39],
+	    	p: 1/60,
+	    	actiontype: "dagger",
+	    	target: "ophelia",
+	    	effect: {ophelia: [-0.03, 0]}
+	    },
+	    heart_all: {
+	    	happy: [0.7, 1],
+	    	clarity: [0.7, 1],
+	    	p: 1/60,
+	    	actiontype: "heart",
+	    	target: "heart",
+	    	effect: {claudius: [0.04, 0], gertrude: [0.05, 0], hamlet: [0.02, 0]}
+	    },
 	    heart_hamlet: {
 	    	happy: [.7, 1],
 	    	clarity: [.4, .69],
@@ -254,6 +294,22 @@ var GAME_SETUP =
 	    	actiontype: "dagger",
 	    	target: "ophelia",
 	    	effect: {ophelia: [-0.02, 0]}
+	    },
+	    dagger_self: {
+	    	happy: [.4, .69],
+	    	clarity: [0, .39],
+	    	p: 1/60,
+	    	actiontype: "dagger",
+	    	target: "gertrude",
+	    	effect: {gertrude: [-0.03, 0]}
+	    },
+	    heart_all: {
+	    	happy: [0.7, 1],
+	    	clarity: [0.7, 1],
+	    	p: 1/60,
+	    	actiontype: "heart",
+	    	target: "heart",
+	    	effect: {hamlet: [0.02, 0], ophelia: [0.04, 0], claudius: [0.05, 0]}
 	    },
 	    heart_claudius: {
 	    	happy: [.7, 1],
