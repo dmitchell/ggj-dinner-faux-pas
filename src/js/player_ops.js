@@ -184,7 +184,7 @@ var PLAYER_OPS = {
 	            angry: {
 	                hamlet: [-0.1, 0]
 	            }
-	        },
+	        }
 	},
 	claudius: {
 	      ent: { 
@@ -288,7 +288,7 @@ var PLAYER_OPS = {
 	            angry: {
 	                claudius: [-0.1, 0]
 	            }
-	        },
+	        }
 	},
 	ophelia: {
 	      ent: { 
@@ -392,7 +392,7 @@ var PLAYER_OPS = {
 	            angry: {
 	                ophelia: [-0.1, 0]
 	            }
-	        },
+	        }
 	},
 	gertrude: {
 	      ent: { 
@@ -496,7 +496,7 @@ var PLAYER_OPS = {
 	            angry: {
 	                gertrude: [-0.1, 0]
 	            }
-	        },
+	        }
 	}
     }
 }
