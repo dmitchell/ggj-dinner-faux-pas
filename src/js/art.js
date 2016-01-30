@@ -34,7 +34,7 @@ function showAction(cmd){
     if(cmd.actiontype == "heart"){
         throwSomething("heart",false,heads[cmd.source].x,heads[cmd.source].y,heads[cmd.target].x,heads[cmd.target].y);                        
     }
-
+    //speak, source, topic
 }
 
 
@@ -80,5 +80,20 @@ function displayCourse(courseName){
         $stage.append($food);
 
     
+}
+
+
+function displaySpeech(who,topic){
+    var $balloon = $('<div class="speechballoon '+who+' '+topic+'">');
+    var $img = $('<img src="css/speech/icon_'+topic+'.png">');
+    $balloon.append($img);
+    $("#stage").append($balloon);
+                   /* 
+                   <div class="angry"></div>
+                    <div class="conf"></div>
+                    <div class="excited"></div>
+                    <div class="neutral"></div>
+                
+                    <div class="susp"></div>*/
 }
 

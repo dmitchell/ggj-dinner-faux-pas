@@ -54,6 +54,14 @@
         <div class="glass npc ophelia"></div>
 -->
         
+        
+        <!--
+        <div class="speechballoon ophelia travel"><img  src="css/speech/icon_travel.png"></div>
+        <div class="speechballoon hamlet gov"><img class="gov" src="css/speech/icon_gov.png"></div>
+        <div class="speechballoon gertrude occult"><img class="occult" src="css/speech/icon_occult.png"></div>
+        <div class="speechballoon claudius food"><img class="food" src="css/speech/icon_food.png"></div>
+                -->
+                
   </div>
 </body>
 
@@ -77,6 +85,10 @@
     }
     
 </script>
+    <button onclick='displaySpeech("ophelia","travel")'>ophelia</button>
+    <button onclick='displaySpeech("hamlet","gov")'>hamlet</button>
+    <button onclick='displaySpeech("gertrude","occult")'>gertrude</button>
+    <button onclick='displaySpeech("claudius","food")'>claudius</button>
     <button onclick='displayCourse("first")'>setcourse</button>
     <button onclick=' showAction({p: 1, target: "claudius", effect: Object, action: "dagger_claudius", source: "hamlet", actiontype:"dagger"});'>daggers</button>
     <button onclick=' showAction({p: 1, target: "gertrude", effect: Object, action: "dagger_claudius", source: "ophelia", actiontype:"heart"});'>heart</button>

@@ -334,3 +334,102 @@ transform:rotate(160deg);
 	background-size: 342px 227px;
 
 }
+
+
+
+
+.speechballoon {
+	width:200px;
+	height:200px;
+	background-size:200px 200px;
+	background-image:url(speech/speech_rect.png);
+	top:0px;
+	z-index:150;
+	text-align: center;
+}
+
+
+.speechballoon.ophelia{
+	left:0px;
+	
+	background-image:url(speech/speech_rect_flip.png);
+}
+
+.speechballoon.claudius{
+	left:200px;
+	background-image:url(speech/speech_rect_flip.png);
+}
+.speechballoon.hamlet{
+	left:600px;
+}
+.speechballoon.gertrude{
+	left:400px;
+}
+.speechballoon.extra {
+	left:300px;
+	top: 230px;
+}
+
+.speechballoon img {
+	z-index:175;
+	position:relative;
+	width:75px;
+	z-index:175;
+}
+.speechballoon.food img {
+	top:30px;
+}
+.speechballoon.occult img {
+	top:10px;
+}
+.speechballoon.gov img {
+	top:27px;
+}
+
+.speechballoon.family img {
+	top:30px;
+}
+
+
+.speechballoon div{
+	position:absolute;
+	width:75px;
+	height:75px;
+	background-size: 75px 75px;
+	left:0px;
+	border-radius:20px;
+	opacity: .75;
+	cursor: pointer;
+	
+}
+.speechballoon:hover div {
+	opacity: 1;
+}
+
+.speechballoon div.angry{
+	background-image: url(speech/speech_angry.png);
+	top:80px;
+}
+.speechballoon div.susp{
+	background-image: url(speech/speech_susp.png);
+	top:140px;
+}
+.speechballoon div.conf{
+	background-image: url(speech/speech_conf.png);;
+	top:80px;
+	left:120px;
+}
+.speechballoon div.neutral{
+	background-image: url(speech/speech_neutral.png);;
+	top:110px;
+	left:60px;
+}
+.speechballoon div.excited{
+	background-image: url(speech/speech_excited.png);;
+	top:140px;
+	left:120px;
+}
+
+
+
+
