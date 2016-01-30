@@ -34,9 +34,10 @@ function gogogo(){
 	// find next course
 	for (var course in GAME_SETUP.course) {
 	    if (GAME_SETUP.course[course].start < GLOBALS.time &&
-		GAME_SETUP.course[course].end > GLOBALS.time) {
+		(GAME_SETUP.course[course].end == undefined ||
+		 GAME_SETUP.course[course].end > GLOBALS.time)) {
 		GLOBALS.course = course;
-		// TODO draw course transition
+		// draw course transition
 		listLog("Change course to " + course);
                 displayCourse(course);
 		if (course == "successful") {
