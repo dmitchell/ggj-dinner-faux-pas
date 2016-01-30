@@ -6,14 +6,18 @@
 
 
 var heads = {
-    "hamlet":{x:660,y:53},
-    "gertrude":{x:480,y:30},
-    "ophelia":{x:130,y:80},
-    "claudius":{x:300,y:60}
+    "hamlet":{x:660,y:253},
+    "gertrude":{x:480,y:230},
+    "ophelia":{x:130,y:280},
+    "claudius":{x:300,y:260}
     
 }
-
-
+var courseFood = {
+    "first":"soup",
+    "second":"salad",
+    "main":"meat"
+};
+ 
 
 function showState(cmd){
     console.log("in art showState");
@@ -38,10 +42,10 @@ function throwSomething(thing,rotate,sourceX,sourceY,targetX,targetY){
         var $dagger = $("<div class='"+thing+"'></div>");
         //which way to point the dagger based on who is sitting left or right
         //transform:rotate(210deg);
-        if(rotate){
-            var rotate = 270;
-            if(sourceX > targetX) rotate = 90;
-            $dagger.css("transform","rotate("+rotate+"deg)");
+        if(rotate && sourceX != targetX){
+            var rotation = 270;
+            if(sourceX > targetX) rotation = 90;
+            $dagger.css("transform","rotate("+rotation+"deg)");
         }
         $dagger.css("left",sourceX+"px");
         $dagger.css("top",sourceY+"px");
@@ -55,6 +59,25 @@ function throwSomething(thing,rotate,sourceX,sourceY,targetX,targetY){
 
 
 function displayCourse(courseName){
+    $(".food").remove();
+    
+    var foodName = courseFood[courseName];
+    var $stage = $("#stage");
+    for(name in heads){
+        var $npcplate = $(".plate."+name);
+        var $food = $("<div class='food npc eaten "+foodName+"'></div>");
+        console.log($npcplate.css("top"));
+        $food.css("top",$npcplate.css("top"));
+        $food.css("left",$npcplate.css("left"));
+        $stage.append($food);
+        
+    }
+    var $playerplate = $(".plate.player");
+    var $food = $("<div class='food player eaten "+foodName+"'></div>");   
+            $food.css("top",$playerplate.css("top"));
+        $food.css("left",$playerplate.css("left"));
+        $stage.append($food);
+
     
 }
 

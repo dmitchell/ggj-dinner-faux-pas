@@ -6,10 +6,10 @@ body {
 #stage {
 	border:1px dashed black;
 	width:800px;
-	height:600px;
+	height:800px;
 	background-color:#ffffdd;
-	position:absolute;
-	top:0px;left:0px;
+	position:relative;
+	
 	overflow: hidden;
 	
 }
@@ -23,7 +23,7 @@ body {
 #table {
 	background-image:url(table.png);
 	left:0px;
-	top:250px;
+	top:450px;
 	width:800px;
 	height:480px;
 	z-index:75;
@@ -43,7 +43,7 @@ body {
 
 #claudius{
 	background-image:url(claudius-start.png);
-	top:10px;
+	top:210px;
 	left:150px;
 	width:233px;
 	height:577px;
@@ -52,7 +52,7 @@ body {
 }
 #gertrude{
 	background-image:url(gertrude-start.png);		
-	top:10px;
+	top:210px;
 	left:370px;
 	width:311px;
 	height:547px;
@@ -63,12 +63,12 @@ body {
 	height:600px;	
 	background-image:url(hamlet-start.png);
 	background-size: 205px 600px;
-	top:10px;
+	top:210px;
 	left:600px;
 }
 #ophelia{
 	background-image:url(ophelia-start.png);
-	top:40px;
+	top:240px;
 	left:0px;
 	width:198px;
 	height:559px;
@@ -89,7 +89,7 @@ body {
 	width:342px;
 	height:227px;
 	background-size: 342px 227px;
-	top:350px;
+	top:550px;
 	left:220px;
 	z-index:162;
 	
@@ -102,23 +102,23 @@ body {
 }
 
 .plate.ophelia {
-	top:330px;
+	top:530px;
 	left:85px;
 	Xtransform:rotate(135deg);
 }
 
 .plate.claudius {
-	top:280px;
+	top:480px;
 	left:270px;
 
 }
 .plate.gertrude {
 	left:456px;
-	top:280px;
+	top:480px;
 }
 .plate.hamlet {
 	left:620px;
-	top:320px;
+	top:520px;
 }
 
 
@@ -135,7 +135,7 @@ body {
 	width:52px;
 	height:242px;
 	background-size: 52px 242px;
-	top:350px;
+	top:550px;
 	left:555px;
 	z-index:160;
 }
@@ -148,7 +148,7 @@ body {
 }
 
 .knife.ophelia {
-	top:340px;
+	top:540px;
 	left:75px;
 	transform:rotate(135deg);
 	
@@ -156,19 +156,19 @@ body {
 
 
 .knife.claudius {
-	top:283px;
+	top:483px;
 	left:260px;
 	transform:rotate(150deg);
 
 }
 .knife.gertrude {
 	left:438px;
-	top:262px;
+	top:462px;
 	transform:rotate(195deg);
 }
 .knife.hamlet {
 	left:603px;
-	top:294px;
+	top:494px;
 	transform:rotate(195deg);
 }
 
@@ -190,7 +190,7 @@ body {
 	width:72px;
 	height:222px;
 	background-size: 72px 222px;
-	top:380px;
+	top:580px;
 	left:600px;
 	z-index:160;
 }
@@ -203,24 +203,24 @@ body {
 }
 
 .spoon.ophelia {
-	top:361px;
+	top:561px;
 	left:55px;
 	transform:rotate(135deg);
 }
 
 .spoon.claudius {
-	top:293px;
+	top:493px;
 	left:229px;
 	transform:rotate(150deg);
 }
 .spoon.gertrude {
 	left:406px;
-	top:260px;
+	top:460px;
 	transform:rotate(195deg);
 }
 .spoon.hamlet {
 	left:580px;
-	top:280px;
+	top:480px;
 	transform:rotate(195deg);
 }
 
@@ -242,7 +242,7 @@ body {
 	width:50px;
 	height:222px;
 	background-size: 50px 222px;
-	top:360px;
+	top:560px;
 	left:180px;
 	z-index:160;
 }
@@ -254,24 +254,24 @@ body {
 }
 
 .fork.ophelia {
-	top:286px;
+	top:486px;
 	left:180px;
 	transform:rotate(120deg);
 }
 
 .fork.claudius {
-	top:257px;
+	top:457px;
 	left:354px;
 transform:rotate(160deg);
 }
 .fork.gertrude {
 	left:540px;
-	top:280px;
+	top:480px;
 	transform:rotate(200deg);
 }
 .fork.hamlet {
 	left:700px;
-	top:325px;
+	top:525px;
 	transform:rotate(210deg);
 }
 
@@ -296,4 +296,41 @@ transform:rotate(160deg);
 	z-index:200;
 	
 	
+}
+.food {
+	z-index:400;
+}
+
+
+.food.meat.eaten {
+	background-image:url(food/meat_half.png);
+}
+
+.food.meat {
+	background-image:url(food/meat_whole.png);
+}
+.food.soup.eaten {
+	background-image:url(food/soup_half.png);
+}
+
+.food.soup {
+	background-image:url(food/soup_whole.png);
+}
+.food.salad.eaten {
+	background-image:url(food/salad_half.png);
+}
+
+.food.salad {
+	background-image:url(food/salad_whole.png);
+}
+.food.npc {
+	width:91px;
+	height:60px;
+	background-size:91px 60px;
+}
+.food.player {
+	width:342px;
+	height:227px;
+	background-size: 342px 227px;
+
 }

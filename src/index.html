@@ -44,13 +44,13 @@
         <div class="spoon npc gertrude"></div>
         <div class="spoon npc hamlet"></div>
         <div class="spoon npc ophelia"></div>
-
+<!--
         <div class="glass player"></div>
         <div class="glass npc claudius"></div>
         <div class="glass npc gertrude"></div>
         <div class="glass npc hamlet"></div>
         <div class="glass npc ophelia"></div>
-
+-->
         
   </div>
 </body>
@@ -63,10 +63,10 @@
         
     });
     function clickStage(e){
-       alert("class:"+$(this).attr("class")+"\nid:"+$(this).attr('id'));
+     //  alert("class:"+$(this).attr("class")+"\nid:"+$(this).attr('id'));
        
         
-     //   showAction({p: 1, target: "hamlet", effect: Object, action: "dagger_claudius", source: "ophelia", actiontype:"heart"});
+       
         
        // var parentOffset = $(this).parent().offset(); 
       //  var relX = e.pageX - parentOffset.left;
@@ -75,7 +75,8 @@
     }
     
 </script>
-    
-    
+    <button onclick='displayCourse("first")'>setcourse</button>
+    <button onclick=' showAction({p: 1, target: "claudius", effect: Object, action: "dagger_claudius", source: "hamlet", actiontype:"dagger"});'>daggers</button>
+    <button onclick=' showAction({p: 1, target: "gertrude", effect: Object, action: "dagger_claudius", source: "ophelia", actiontype:"heart"});'>heart</button>
 
 </html>
