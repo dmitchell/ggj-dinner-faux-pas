@@ -8,13 +8,14 @@ var GLOBALS = {
 
 $(document).ready(function(){
     // TODO initialize course
+    
     // TODO initialize npcs
     // TODO initialize player
 });
 
 
 function gogogo(){
-    // TODO check course expiration
+    // TODO check course transition
     // TODO move each player
 }
 
