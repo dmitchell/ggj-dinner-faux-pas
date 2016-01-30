@@ -134,7 +134,7 @@ var PLAYER_OPS = {
 	                hamlet: [0, -0.1]
 	            }
 	        },
-	        gov {
+	        gov: {
 	            excited: {
 	                hamlet: [-0.1, 0]
 	            },
