@@ -27,6 +27,7 @@ function showState(cmd){
 function showAction(cmd){
     console.log("in art showAction");
     console.log(cmd);
+    if (cmd.target == "all") return;  // temporary hack to enable testing
     if(cmd.actiontype == "dagger"){
         throwSomething("dagger",true,heads[cmd.source].x,heads[cmd.source].y,heads[cmd.target].x,heads[cmd.target].y);                        
     }

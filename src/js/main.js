@@ -3,6 +3,7 @@ var GLOBALS = {
     npcs: {},
     course: null,
     time: 0,
+    player: null,
 }
 
 
@@ -18,6 +19,7 @@ $(document).ready(function(){
     for (var actor in GAME_SETUP.npc) {
 	new NPC(actor, GAME_SETUP.npc[actor]);
     }
+    GLOBALS.player = new Player();
     // initialize player
     gogogo();
 });
@@ -25,8 +27,15 @@ $(document).ready(function(){
 
 function gogogo(){
     // move each player
-    for (var npc in GLOBALS.npcs) {
-	GLOBALS.npcs[npc].move();
+    for (var npc_id in GLOBALS.npcs) {
+	var npc = GLOBALS.npcs[npc_id];
+	npc.move();
+	// check for end game
+	if (npc.happy <= 0) {
+	    listLog("Game over: catastrophe for " + npc_id);
+	    // TODO add whatever transition we need
+	    return;
+	}
     }
     // check course transition
     GLOBALS.time++;
@@ -40,6 +49,7 @@ function gogogo(){
 		// draw course transition
 		listLog("Change course to " + course);
                 displayCourse(course);
+		GLOBALS.player.course(course);
 		if (course == "successful") {
 		    listLog("Game over. You survived!");
 		    return;
@@ -48,6 +58,10 @@ function gogogo(){
 	}
     }
     setTimeout(gogogo,GLOBALS.baseinterval);
+}
+
+function in_course(needed) {
+    return (needed == undefined || GLOBALS.course == needed);
 }
 
 function listLog(msg){
