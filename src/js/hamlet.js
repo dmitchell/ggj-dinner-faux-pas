@@ -377,7 +377,7 @@ var GAME_SETUP =
      second: {
 	 start: 105, end: 165
      },
-     dessert: {
+     main: {
 	 start: 165, end: 240
      },
      successful: {
