@@ -102,7 +102,7 @@ var GAME_SETUP =
 	    dagger_all: {
 		happy: [0, 0.39], // if happiness between these
 		clarity: [0, 0.39],
-		p: 1/15, // once per minute
+		p: 1/60, // once per minute
 		actiontype: "dagger",
 		target: "all", // or all or player
 		effect: {hamlet: [-0.06, 0], ophelia: [-0.03, 0], gertrude: [-0.08, 0]} 
@@ -110,7 +110,7 @@ var GAME_SETUP =
 	    dagger_hamlet: {
 	    	happy: [0, 0.39],
 	    	clarity: [0.7, 1],
-	    	p: 1/15,
+	    	p: 1/60,
 	    	actiontype: "dagger",
 	    	target: "hamlet",
 	    	effect: {hamlet: [-0.05, 0]}
@@ -118,7 +118,7 @@ var GAME_SETUP =
 	    dagger_self: {
 	    	happy: [.4, .69],
 	    	clarity: [0, .39],
-	    	p: 1/15,
+	    	p: 1/60,
 	    	actiontype: "dagger",
 	    	target: "claudius",
 	    	effect: {claudius: [-0.07, 0]}
@@ -126,7 +126,7 @@ var GAME_SETUP =
 	    heart_all: {
 	    	happy: [0.7, 1],
 	    	clarity: [0.7, 1],
-	    	p: 1/15,
+	    	p: 1/60,
 	    	actiontype: "heart",
 	    	target: "heart",
 	    	effect: {hamlet: [0.06, 0], ophelia: [0.03, 0], gertrude: [0.08, 0]}
@@ -134,7 +134,7 @@ var GAME_SETUP =
 	    heart_gertrude: {
 	    	happy: [.7, 1],
 	    	clarity: [.4, .69],
-	    	p: 1/15,
+	    	p: 1/60,
 	    	actiontype: "heart",
 	    	target: "gertrude",
 	    	effect: {gertrude: [.05, 0]}
@@ -192,7 +192,7 @@ var GAME_SETUP =
 	    dagger_all: {
 		happy: [0, 0.39], // if happiness between these
 		clarity: [0, 0.39],
-		p: 1/15, // once per minute
+		p: 1/60, // once per minute
 		actiontype: "dagger",
 		target: "all", // or all or player
 		effect: {claudius: [-0.06, 0], gertrude: [-0.08, 0], hamlet: [-0.03, 0]} 
@@ -200,7 +200,7 @@ var GAME_SETUP =
 	    dagger_gertrude: {
 	    	happy: [0, 0.39],
 	    	clarity: [0.7, 1],
-	    	p: 1/15,
+	    	p: 1/60,
 	    	actiontype: "dagger",
 	    	target: "gertrude",
 	    	effect: {gertrude: [-0.05, 0]}
@@ -208,7 +208,7 @@ var GAME_SETUP =
 	    dagger_self: {
 	    	happy: [.4, .69],
 	    	clarity: [0, .39],
-	    	p: 1/15,
+	    	p: 1/60,
 	    	actiontype: "dagger",
 	    	target: "ophelia",
 	    	effect: {ophelia: [-0.07, 0]}
@@ -216,7 +216,7 @@ var GAME_SETUP =
 	    heart_all: {
 	    	happy: [0.7, 1],
 	    	clarity: [0.7, 1],
-	    	p: 1/15,
+	    	p: 1/60,
 	    	actiontype: "heart",
 	    	target: "heart",
 	    	effect: {claudius: [0.06, 0], gertrude: [0.08, 0], hamlet: [0.03, 0]}
@@ -224,7 +224,7 @@ var GAME_SETUP =
 	    heart_hamlet: {
 	    	happy: [.7, 1],
 	    	clarity: [.4, .69],
-	    	p: 1/15,
+	    	p: 1/60,
 	    	actiontype: "heart",
 	    	target: "hamlet",
 	    	effect: {hamlet: [.05, 0], ophelia: [-0.03, 0]}
@@ -282,7 +282,7 @@ var GAME_SETUP =
 	    dagger_all: {
 		happy: [0, 0.39], // if happiness between these
 		clarity: [0, 0.39],
-		p: 1/15, // once per minute
+		p: 1/60, // once per minute
 		actiontype: "dagger",
 		target: "all", // or all or player
 		effect: {hamlet: [-0.03, 0], ophelia: [-0.06, 0], claudius: [-0.08, 0]} 
@@ -290,7 +290,7 @@ var GAME_SETUP =
 	    dagger_ophelia: {
 	    	happy: [0, 0.39],
 	    	clarity: [0.7, 1],
-	    	p: 1/15,
+	    	p: 1/60,
 	    	actiontype: "dagger",
 	    	target: "ophelia",
 	    	effect: {ophelia: [-0.05, 0]}
@@ -298,7 +298,7 @@ var GAME_SETUP =
 	    dagger_self: {
 	    	happy: [.4, .69],
 	    	clarity: [0, .39],
-	    	p: 1/15,
+	    	p: 1/60,
 	    	actiontype: "dagger",
 	    	target: "gertrude",
 	    	effect: {gertrude: [-0.07, 0]}
@@ -306,7 +306,7 @@ var GAME_SETUP =
 	    heart_all: {
 	    	happy: [0.7, 1],
 	    	clarity: [0.7, 1],
-	    	p: 1/15,
+	    	p: 1/60,
 	    	actiontype: "heart",
 	    	target: "heart",
 	    	effect: {hamlet: [0.03, 0], ophelia: [0.06, 0], claudius: [0.08, 0]}
@@ -314,7 +314,7 @@ var GAME_SETUP =
 	    heart_claudius: {
 	    	happy: [.7, 1],
 	    	clarity: [.4, .69],
-	    	p: 1/15,
+	    	p: 1/60,
 	    	actiontype: "heart",
 	    	target: "claudius",
 	    	effect: {claudius: [.05, 0]}
