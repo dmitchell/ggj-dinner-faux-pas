@@ -9,6 +9,7 @@ var GAME_SETUP =
 		happy: [0, 0.39], // if happiness between these
 		clarity: [0, 0.39],
 		p: 1/60, // once per minute
+		actiontype: "dagger",
 		target: "all", // or all or player
 		effect: {claudius: [-0.04, 0], ophelia: [-0.05, 0], gertrude: [-0.02, 0]} // this model has the weakness
 	     // that claudius's and gertrude's responses should be a function of 
@@ -20,8 +21,25 @@ var GAME_SETUP =
 	    	happy: [0, 0.39],
 	    	clarity: [0.7, 1],
 	    	p: 1/60,
+	    	actiontype: "dagger",
 	    	target: "claudius",
 	    	effect: {claudius: [-0.02, 0]}
+	    },
+	    heart_all: {
+	    	happy: [0.7, 1],
+	    	clarity: [0.7, 1],
+	    	p: 1/60,
+	    	actiontype: "heart",
+	    	target: "heart",
+	    	effect: {claudius: [0.04, 0], ophelia: [0.05, 0], gertrude: [0.02, 0]}
+	    },
+	    heart_ophelia: {
+	    	happy: [.7, 1],
+	    	clarity: [.4, .69],
+	    	p: 1/60,
+	    	actiontype: "heart",
+	    	target: "ophelia",
+	    	effect: {ophelia: [.02, 0]}
 	    },
 	    sword: {
 		happy: [0, 0.05], // end game
@@ -77,25 +95,31 @@ var GAME_SETUP =
 		happy: [0, 0.39], // if happiness between these
 		clarity: [0, 0.39],
 		p: 1/60, // once per minute
+		actiontype: "dagger",
 		target: "all", // or all or player
-		effect: {hamlet: [-0.04, 0], ophelia: [-0.02, 0], gertrude: [-0.05, 0]} // this model has the weakness
-	     // that claudius's and gertrude's responses should be a function of 
-             // their current state: if confused, then they may ignore the interaction.
-             // if they are happy, then they should get confused not angry
-             // if they are angry, it should amplify
+		effect: {hamlet: [-0.04, 0], ophelia: [-0.02, 0], gertrude: [-0.05, 0]} 
 	    },
 	    dagger_hamlet: {
 	    	happy: [0, 0.39],
 	    	clarity: [0.7, 1],
 	    	p: 1/60,
+	    	actiontype: "dagger",
 	    	target: "hamlet",
 	    	effect: {hamlet: [-0.02, 0]}
+	    },
+	    heart_gertrude: {
+	    	happy: [.7, 1],
+	    	clarity: [.4, .69],
+	    	p: 1/60,
+	    	actiontype: "heart",
+	    	target: "gertrude",
+	    	effect: {gertrude: [.02, 0]}
 	    },
 	    sword: {
 		happy: [0, 0.05], // end game
 		p: 0.5, // almost certain to occur in 5 seconds (1 - 0.5^5)
 		target: "hamlet",
-		endgame: "hamlet" // ends the game with claudius dead
+		endgame: "hamlet" // ends the game with hamlet dead
 	    }
 	},
 	drinks: {
@@ -145,19 +169,25 @@ var GAME_SETUP =
 		happy: [0, 0.39], // if happiness between these
 		clarity: [0, 0.39],
 		p: 1/60, // once per minute
+		actiontype: "dagger",
 		target: "all", // or all or player
-		effect: {claudius: [-0.04, 0], gertrude: [-0.05, 0], hamlet: [-0.02, 0]} // this model has the weakness
-	     // that claudius's and gertrude's responses should be a function of 
-             // their current state: if confused, then they may ignore the interaction.
-             // if they are happy, then they should get confused not angry
-             // if they are angry, it should amplify
+		effect: {claudius: [-0.04, 0], gertrude: [-0.05, 0], hamlet: [-0.02, 0]} 
 	    },
 	    dagger_gertrude: {
 	    	happy: [0, 0.39],
 	    	clarity: [0.7, 1],
 	    	p: 1/60,
+	    	actiontype: "dagger",
 	    	target: "gertrude",
 	    	effect: {gertrude: [-0.02, 0]}
+	    },
+	    heart_hamlet: {
+	    	happy: [.7, 1],
+	    	clarity: [.4, .69],
+	    	p: 1/60,
+	    	actiontype: "heart",
+	    	target: "hamlet",
+	    	effect: {hamlet: [.02, 0]}
 	    },
 	    sword: {
 		happy: [0, 0.05], // end game
@@ -213,25 +243,31 @@ var GAME_SETUP =
 		happy: [0, 0.39], // if happiness between these
 		clarity: [0, 0.39],
 		p: 1/60, // once per minute
+		actiontype: "dagger",
 		target: "all", // or all or player
-		effect: {hamlet: [-0.02, 0], ophelia: [-0.04, 0], claudius: [-0.05, 0]} // this model has the weakness
-	     // that claudius's and gertrude's responses should be a function of 
-             // their current state: if confused, then they may ignore the interaction.
-             // if they are happy, then they should get confused not angry
-             // if they are angry, it should amplify
+		effect: {hamlet: [-0.02, 0], ophelia: [-0.04, 0], claudius: [-0.05, 0]} 
 	    },
 	    dagger_ophelia: {
 	    	happy: [0, 0.39],
 	    	clarity: [0.7, 1],
 	    	p: 1/60,
+	    	actiontype: "dagger",
 	    	target: "ophelia",
 	    	effect: {ophelia: [-0.02, 0]}
+	    },
+	    heart_claudius: {
+	    	happy: [.7, 1],
+	    	clarity: [.4, .69],
+	    	p: 1/60,
+	    	actiontype: "heart",
+	    	target: "claudius",
+	    	effect: {claudius: [.02, 0]}
 	    },
 	    sword: {
 		happy: [0, 0.05], // end game
 		p: 0.5, // almost certain to occur in 5 seconds (1 - 0.5^5)
 		target: "player",
-		endgame: "player" // ends the game with claudius dead
+		endgame: "player" // ends the game with player dead
 	    }
 	},
 	drinks: {
