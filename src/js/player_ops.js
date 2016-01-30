@@ -81,6 +81,13 @@ var PLAYER_OPS = {
 	}]
     },
     speech: {
+    	respond_ent_hamlet: {speaker: "hamlet",
+	    topic: "food",
+	    emoticon: "excited",
+	    effect: {
+		hamlet: [0, 0.1]
+	    },	
+    	},
 	respond_food_hamlet: {
 	    speaker: "hamlet",
 	    topic: "food",
