@@ -277,3 +277,23 @@ transform:rotate(160deg);
 
 
 
+
+.dagger {
+	position:absolute;
+	background-image:url(dagger.png);
+	width:27px;
+	height:64px;
+	background-size:27px 64px;
+	z-index:200;
+}
+
+.heart {
+	position:absolute;
+	background-image:url(heart.png);
+	width:35px;
+	height:31px;
+	background-size:35px 31px;
+	z-index:200;
+	
+	
+}

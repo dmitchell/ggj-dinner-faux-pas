@@ -13,6 +13,7 @@
 <body>
 <h1>dinner-party faux pas</h1>
   <div id="stage">
+    
         <div id="table"></div>
         <div class="person" id="claudius"></div>
         <div class="person" id="gertrude"></div>
@@ -62,10 +63,13 @@
         
     });
     function clickStage(e){
+        
+        showAction({p: 1, target: "hamlet", effect: Object, action: "dagger_claudius", source: "ophelia", actiontype:"heart"});
+        
         var parentOffset = $(this).parent().offset(); 
         var relX = e.pageX - parentOffset.left;
         var relY = e.pageY - parentOffset.top;
-   alert("left:"+relX+"px;\n"+"top:"+relY+"px;");
+   //alert("left:"+relX+"px;\n"+"top:"+relY+"px;");
     }
     
 </script>
