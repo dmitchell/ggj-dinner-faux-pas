@@ -28,7 +28,7 @@ Representation:
         p: 0.1,
         target: claudius, // or all or player
         action: dagger_emote,
-        effect: {claudius: .04, hamlet: .05, gertrude: .02}, // this model has the weakness
+        effect: {claudius: [.04, 0], hamlet: [.05, 0], gertrude: [.02, 0]}, // this model has the weakness
 	     // that claudius's and gertrude's responses should be a function of 
              // their current state: if confused, then they may ignore the interaction.
              // if they are happy, then they should get confused not angry
