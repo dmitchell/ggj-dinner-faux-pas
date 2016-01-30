@@ -41,6 +41,7 @@ function gogogo(){
 	    }
 	}
     }
+    setTimeout(gogogo,GLOBALS.baseinterval);
 }
 
 function listLog(msg){
