@@ -59,16 +59,18 @@
 <script>
     $(function(){
         
-        $("#stage").click(clickStage);
+        $("#stage div").click(clickStage);
         
     });
     function clickStage(e){
+       alert("class:"+$(this).attr("class")+"\nid:"+$(this).attr('id'));
+       
         
-        showAction({p: 1, target: "hamlet", effect: Object, action: "dagger_claudius", source: "ophelia", actiontype:"heart"});
+     //   showAction({p: 1, target: "hamlet", effect: Object, action: "dagger_claudius", source: "ophelia", actiontype:"heart"});
         
-        var parentOffset = $(this).parent().offset(); 
-        var relX = e.pageX - parentOffset.left;
-        var relY = e.pageY - parentOffset.top;
+       // var parentOffset = $(this).parent().offset(); 
+      //  var relX = e.pageX - parentOffset.left;
+      //  var relY = e.pageY - parentOffset.top;
    //alert("left:"+relX+"px;\n"+"top:"+relY+"px;");
     }
     
