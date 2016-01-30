@@ -82,3 +82,8 @@ function displayCourse(courseName){
     
 }
 
+function clickStage(e){
+    alert("class:"+$(this).attr("class")+"\nid:"+$(this).attr('id'));
+    
+}
+    

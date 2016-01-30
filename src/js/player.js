@@ -12,7 +12,11 @@ Player.prototype.perform = function(selection) {
 	    var op = ops[idx];
 	    if (in_course(op.course) && this.holding_utensil(op.utensil)) {
 		for (var target in op.effect) {
-		    GLOBALS.npcs[target].react(op.effect[target]);
+		    if (target == "utensil") {
+			this.utensil = op.effect[target];
+		    } else {
+			GLOBALS.npcs[target].react(op.effect[target]);
+		    }
 		}
 	    }
 	}

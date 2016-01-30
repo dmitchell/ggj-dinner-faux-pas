@@ -7,8 +7,9 @@ var NPC = function(name, descriptor) {
     // set action and source properties
     for (var course in this.operations) {
 	for (var action in this.operations[course]) {
-	    this.operations[course][action].action = action;
-	    this.operations[course][action].source = this.name;
+	    var entry = this.operations[course][action];
+	    entry.action = action;
+	    entry.source = this.name;
 	}
     }
     this.topic = null;
@@ -16,6 +17,8 @@ var NPC = function(name, descriptor) {
     // draw npc
     showState(this);
 }
+
+NPC.prototype.topics = ["travel", "occult", "gov", "family", "food", "ent"];
 
 // figures out what if any moves this npc makes in this cycle
 // at most one move per cycle per NPC
@@ -30,6 +33,9 @@ NPC.prototype.moveInternal = function(phase) {
 	var op = phaseOps[operator];
 	// if happiness and clarity and random
 	if (this.gate(op) && Math.random() < op.p) {
+	    if (op.actiontype == "talk") {
+		this.topic = op.topic = this.topics[Math.random() * 6];
+	    }
 	    // invoke graphics (use target property)
 	    showAction(op);
 	    // affect each target
