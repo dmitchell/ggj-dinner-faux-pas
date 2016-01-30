@@ -8,7 +8,7 @@ var GAME_SETUP =
 	    dagger_all: {
 		happy: [0, 0.39], // if happiness between these
 		clarity: [0, 0.39],
-		p: 1/15, // once per minute
+		p: 1/60, // once per minute
 		actiontype: "dagger",
 		target: "all", // or all or player
 		effect: {claudius: [-0.06, 0], ophelia: [-0.08, 0], gertrude: [-0.03, 0]} // this model has the weakness
@@ -20,7 +20,7 @@ var GAME_SETUP =
 	    dagger_claudius: {
 	    	happy: [0, 0.39],
 	    	clarity: [0.7, 1],
-	    	p: 1/15,
+	    	p: 1/60,
 	    	actiontype: "dagger",
 	    	target: "claudius",
 	    	effect: {claudius: [-0.05, 0]}
@@ -28,7 +28,7 @@ var GAME_SETUP =
 	    dagger_self: {
 	    	happy: [.4, .69],
 	    	clarity: [0, .39],
-	    	p: 1/15,
+	    	p: 1/60,
 	    	actiontype: "dagger",
 	    	target: "hamlet",
 	    	effect: {hamlet: [-0.07, 0]}
@@ -36,7 +36,7 @@ var GAME_SETUP =
 	    heart_all: {
 	    	happy: [0.7, 1],
 	    	clarity: [0.7, 1],
-	    	p: 1/15,
+	    	p: 1/60,
 	    	actiontype: "heart",
 	    	target: "heart",
 	    	effect: {claudius: [0.06, 0], ophelia: [0.08, 0], gertrude: [0.03, 0]}
@@ -44,7 +44,7 @@ var GAME_SETUP =
 	    heart_ophelia: {
 	    	happy: [.7, 1],
 	    	clarity: [.4, .69],
-	    	p: 1/15,
+	    	p: 1/60,
 	    	actiontype: "heart",
 	    	target: "ophelia",
 	    	effect: {ophelia: [.05, 0]}
