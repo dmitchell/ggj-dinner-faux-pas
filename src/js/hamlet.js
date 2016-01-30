@@ -19,7 +19,8 @@ var GAME_SETUP =
 	    sword: {
 		happy: [0, 0.05], // end game
 		p: 0.5, // almost certain to occur in 5 seconds (1 - 0.5^5)
-		target: "end" // ends the game
+		target: "Claudius",
+		endgame: "Claudius" // ends the game with claudius dead
 	    }
 	},
 	drinks: {
