@@ -21,23 +21,27 @@ var NPC = function(name, descriptor) {
 // at most one move per cycle per NPC
 NPC.prototype.move = function() {
     // roll the dice against all available moves
-    for (var phase in [GLOBALS.course, "anytime"]) {
-	var phaseOps = this.operations[phase];
-	for (var operator in phaseOps) {
-	    var op = phaseOps[operator];
-	    // if happiness and clarity and random
-	    if (this.gate(op) && Math.random() < op.p) {
-		// invoke graphics (use target property)
-		showAction(op);
-		// affect each target
-		for (var target in op.effect) {
-		    GLOBALS.npcs[target].react(op.effect[target]);
-		}
-		return;  // only one move per cycle
-	    }
-	}
-    } 
+    if (!this.moveInternal(GLOBALS.course)) this.moveInternal("anytime");
 }
+
+NPC.prototype.moveInternal = function(phase) {
+    var phaseOps = this.operations[phase];
+    for (var operator in phaseOps) {
+	var op = phaseOps[operator];
+	// if happiness and clarity and random
+	if (this.gate(op) && Math.random() < op.p) {
+	    // invoke graphics (use target property)
+	    showAction(op);
+	    // affect each target
+	    for (var target in op.effect) {
+		GLOBALS.npcs[target].react(op.effect[target]);
+	    }
+	    return true;  // only one move per cycle
+	}
+    }
+    return false;
+} 
+
 
 /**
 * return true if the NPC's happiness and clarity are within the operator's range
