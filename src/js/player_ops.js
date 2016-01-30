@@ -99,7 +99,7 @@ var PLAYER_OPS = {
 	          angry: {
 	              hamlet: [0, -0.1]
 	          }
-	      }
+	      },
 	      family: {
 	            excited: {
 	                hamlet: [-0.1, 0]
@@ -116,7 +116,7 @@ var PLAYER_OPS = {
 	            angry: {
 	                hamlet: [0.1, 0]
 	            }
-	        }
+	        },
 	        food: {
 	            excited: {
 	                hamlet: [0, 0.1]
@@ -133,7 +133,7 @@ var PLAYER_OPS = {
 	            angry: {
 	                hamlet: [0, -0.1]
 	            }
-	        }
+	        },
 	        gov {
 	            excited: {
 	                hamlet: [-0.1, 0]
