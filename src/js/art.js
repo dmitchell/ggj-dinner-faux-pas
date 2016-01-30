@@ -117,8 +117,11 @@ function clickResponse(){
 }
 
 function clickStage(e){
-    alert("class:"+$(this).attr("class")+"\nid:"+$(this).attr('id'));
-    
+    var cssClass = $(this).attr("class");
+    var playerIdx = cssClass.lastIndexOf("player");
+    if (playerIdx > 0) {
+	GLOBALS.player.perform(cssClass.substring(0, playerIdx).trimRight());
+    }
 }
     
 
