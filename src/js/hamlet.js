@@ -1,21 +1,30 @@
 var GAME_SETUP = 
 {npc: 
  {hamlet: 
-   {happy: .4, // starting value scale 0..1
-    clarity: .5,
+   {happy: .6, // starting value scale 0..1
+    clarity: .3,
     operations: {
 	anytime: {
-	    dagger_emote: {
-		happy: [0, .55], // if happiness between these
-		clarity: [.4, 1.0],
+	    dagger_all: {
+		happy: [0, 0.39], // if happiness between these
+		clarity: [0, 0.39],
 		p: 1/60, // once per minute
-		target: "claudius", // or all or player
-		effect: {claudius: [.04, 0], hamlet: [.05, 0], gertrude: [.02, 0]} // this model has the weakness
+		target: "all", // or all or player
+		effect: {claudius: [-0.04, 0], ophelia: [-0.05, 0], gertrude: [-0.02, 0]} // this model has the weakness
 	     // that claudius's and gertrude's responses should be a function of 
              // their current state: if confused, then they may ignore the interaction.
              // if they are happy, then they should get confused not angry
              // if they are angry, it should amplify
 	    },
+	    dagger_claudius: {
+	    	happy: [0, 0.39],
+	    	clarity: [0.7, 1],
+	    	p: 1/60,
+	    	target: "claudius",
+	    	effect: {claudius: [-0.02, 0]}
+	    }
+	    }
+	    }
 	    sword: {
 		happy: [0, 0.05], // end game
 		p: 0.5, // almost certain to occur in 5 seconds (1 - 0.5^5)
@@ -37,8 +46,27 @@ var GAME_SETUP =
   appearance: [
       // which image to use for each happiness x clarity range
   {
-    happy: [0, .1],
-    image: "hamlet_rage.jpg"
+    happy: [0, .39],
+    clarity: [0, .39],
+    image: "hamlet_angry.jpg"
+  }
+  {
+  	happy: [.7, 1],
+  	clarity: [0, .39],
+  	image: "hamlet_confused.jpg"
+  }
+  {
+  	happy: [0, .39],
+  	clarity: [.7, 1],
+  	image: "hamlet_suspicious.jpg"
+  }
+  {
+  	happy: [.7, 1],
+  	clarity: [.7, 1],
+  	image: "hamlet_excited.jpg"
+  }
+  {
+  	image: "hamlet_neutral.jpg"
   }
   ]
  }
