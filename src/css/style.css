@@ -46,7 +46,7 @@ body {
 	width:233px;
 	height:577px;
 	background-size:233px 577px;
-	transform: scaleX(-1);
+	
 }
 #gertrude{
 	background-image:url(gertrude-start.png);		
@@ -71,6 +71,6 @@ body {
 	width:198px;
 	height:559px;
 	background-size: 198px 559px;
-	transform: scaleX(-1);
+	
 }
 
