@@ -20,8 +20,6 @@ $(document).ready(function(){
 	new NPC(actor, GAME_SETUP.npc[actor]);
     }
     GLOBALS.player = new Player();
-    // initialize player
-    gogogo();
 });
 
 
@@ -32,8 +30,7 @@ function gogogo(){
 	npc.move();
 	// check for end game
 	if (npc.happy <= 0) {
-	    listLog("Game over: catastrophe for " + npc_id);
-	    // TODO add whatever transition we need
+	    endGame(npc_id);
 	    return;
 	}
     }
@@ -52,6 +49,7 @@ function gogogo(){
 		GLOBALS.player.course(course);
 		if (course == "successful") {
 		    listLog("Game over. You survived!");
+		    endGame(null);
 		    return;
 		}
 	    }
