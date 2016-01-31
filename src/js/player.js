@@ -13,7 +13,11 @@ Player.prototype.perform = function(selection) {
 	    if (in_course(op.course) && this.holding_utensil(op.utensil)) {
 		for (var target in op.effect) {
 		    if (target == "utensil") {
+			if (this.utensil != undefined) {
+			    dropUtensil(this.utensil);
+			}
 			this.utensil = op.effect[target];
+			liftUtensil(this.utensil);
 		    } else {
 			GLOBALS.npcs[target].react(op.effect[target]);
 		    }
@@ -44,6 +48,9 @@ Player.prototype.speak = function(target, emoticon) {
 }
 
 Player.prototype.course = function(course) {
+    if (this.utensil != undefined) {
+	dropUtensil(this.utensil);
+    }
     this.utensil = null;
 }
 

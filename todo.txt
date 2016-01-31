@@ -1,9 +1,6 @@
 player use utensils
-* add listeners for food rather than plate
-
-player state visualization
-* get art
-* update player image
+* show selected utensil in fist
+* perhaps give negative feedbak for "wrong" actions
 
 end game
 * art for each NPC
@@ -11,4 +8,4 @@ end game
 ** Claudius: raised sword toward Hamlet
 ** Gertrude: knife at player
 ** Ophelia: suicide
-* configure hamlet.js
+

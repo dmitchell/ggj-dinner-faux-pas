@@ -136,6 +136,14 @@ function clickResponse(){
     $res.parent(".speechballoon").remove();
 }
 
+function dropUtensil(utensil) {
+    $("." + utensil + ".player").css({"transform":  "", "z-index": ""});
+}
+
+function liftUtensil(utensil) {
+    $("." + utensil + ".player").css({"transform": "skewX(-30deg)", "z-index": 500});
+}
+
 function clickStage(e){
     var cssClass = $(this).attr("class");
     var playerIdx = cssClass.lastIndexOf("player");
