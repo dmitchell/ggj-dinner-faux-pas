@@ -105,7 +105,7 @@ var PLAYER_OPS = {
 	                hamlet: [-0.1, 0]
 	            },
 	            confused: {
-	                hamlet: [0, 0.05]
+	                hamlet: [0, 0]
 	            },
 	            neutral: {
 	                hamlet: [0, -0.1]
@@ -122,7 +122,7 @@ var PLAYER_OPS = {
 	                hamlet: [0, 0.05]
 	            },
 	            confused: {
-	                hamlet: [0.05, 0]
+	                hamlet: [0, 0]
 	            },
 	            neutral: {
 	                hamlet: [-0.1, 0]
@@ -142,7 +142,7 @@ var PLAYER_OPS = {
 	                hamlet: [0, -0.1]
 	            },
 	            neutral: {
-	                hamlet: [0, 0.05]
+	                hamlet: [0, 0]
 	            },
 	            suspicious: {
 	                hamlet: [0.05, 0]
@@ -176,7 +176,7 @@ var PLAYER_OPS = {
 	                hamlet: [0.05, 0]
 	            },
 	            neutral: {
-	                hamlet: [0, -0.1]
+	                hamlet: [0, -0.05]
 	            },
 	            suspicious: {
 	                hamlet: [0, 0.05]
@@ -195,7 +195,7 @@ var PLAYER_OPS = {
 	              claudius: [0.05, 0], hamlet: [-0.1, 0]
 	          },
 	          neutral: {
-	              claudius: [0, -0.1]
+	              claudius: [0, 0]
 	          },
 	          suspicious: {
 	              claudius: [0, 0.05]
@@ -215,7 +215,7 @@ var PLAYER_OPS = {
 	                claudius: [0.05, 0]
 	            },
 	            suspicious: {
-	                claudius: [0, -0.1]
+	                claudius: [0, -0.1], hamlet: [0, 0.1]
 	            },
 	            angry: {
 	                claudius: [0, 0.05]
@@ -223,7 +223,7 @@ var PLAYER_OPS = {
 	        },
 	        food: {
 	            excited: {
-	                claudius: [-0.1, 0]
+	                claudius: [0, 0]
 	            },
 	            confused: {
 	                claudius: [0.05, 0]
@@ -280,7 +280,7 @@ var PLAYER_OPS = {
 	                claudius: [0, -0.1]
 	            },
 	            neutral: {
-	                claudius: [-0.1, 0]
+	                claudius: [0, 0]
 	            },
 	            suspicious: {
 	                claudius: [-0.1, 0]
@@ -293,7 +293,7 @@ var PLAYER_OPS = {
 	ophelia: {
 	      ent: { 
 	          excited: {
-        	    ophelia: [0, -0.1]
+        	    ophelia: [0, 0]
 	          },
 	          confused: {
 	              ophelia: [0.05, 0]
@@ -327,7 +327,7 @@ var PLAYER_OPS = {
 	        },
 	        food: {
 	            excited: {
-	                ophelia: [0, -0.1]
+	                ophelia: [0, 0]
 	            },
 	            confused: {
 	                ophelia: [-0.1, 0]
@@ -353,7 +353,7 @@ var PLAYER_OPS = {
 	                ophelia: [0.05, 0]
 	            },
 	            suspicious: {
-	                ophelia: [0, -0.1]
+	                ophelia: [0, 0]
 	            },
 	            angry: {
 	                ophelia: [-0.1, 0]
@@ -373,7 +373,7 @@ var PLAYER_OPS = {
 	                ophelia: [-0.1, 0]
 	            },
 	            angry: {
-	                ophelia: [0, -0.1]
+	                ophelia: [0, 0]
 	            }
 	        },
 	        travel: {
@@ -409,7 +409,7 @@ var PLAYER_OPS = {
 	              gertrude: [0.05, 0]
 	          },
 	          angry: {
-	              gertrude: [0, -0.1]
+	              gertrude: [0, 0]
 	          }
 	      },
 	      family: {
@@ -451,7 +451,7 @@ var PLAYER_OPS = {
 	                gertrude: [0, 0.05]
 	            },
 	            confused: {
-	                gertrude: [0, -0.1]
+	                gertrude: [0, 0]
 	            },
 	            neutral: {
 	                gertrude: [0.05, 0]
@@ -494,7 +494,7 @@ var PLAYER_OPS = {
 	                gertrude: [0, -0.1]
 	            },
 	            angry: {
-	                gertrude: [0, -0.1]
+	                gertrude: [0, 0]
 	            }
 	        }
 	}
