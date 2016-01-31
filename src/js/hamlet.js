@@ -26,6 +26,14 @@ var GAME_SETUP =
 	    	effect: {claudius: [-0.025, 0]}
 	    },
 	    dagger_self: {
+	    	happy: [0, 0.4],
+	    	clarity: [0.4, 0.7],
+	    	p: 1/13,
+	    	actiontype: "dagger",
+	    	target: "hamlet",
+	    	effect: {hamlet: [-0.015, -0.015]
+	    },
+	    dagger_self2: {
 	    	happy: [.4, .7],
 	    	clarity: [0, .4],
 	    	p: 1/13,
@@ -121,12 +129,20 @@ var GAME_SETUP =
 	    	effect: {hamlet: [-0.025, 0]}
 	    },
 	    dagger_self: {
+	    	happy: [0, 0.4],
+	    	clarity: [0.4, 0.7],
+	    	p: 1/15,
+	    	actiontype: "dagger",
+	    	target: "claudius",
+	    	effect: {claudius: [-0.01, -0.01]
+	    },
+	    dagger_self2: {
 	    	happy: [.4, .7],
 	    	clarity: [0, .4],
 	    	p: 1/15,
 	    	actiontype: "dagger",
 	    	target: "claudius",
-	    	effect: {claudius: [-0.035, 0]}
+	    	effect: {claudius: [-0.025, 0]}
 	    },
 	    heart_all: {
 	    	happy: [0.7, 1],
@@ -216,6 +232,14 @@ var GAME_SETUP =
 	    	effect: {gertrude: [-0.025, 0]}
 	    },
 	    dagger_self: {
+	    	happy: [0, 0.4],
+	    	clarity: [0.4, 0.7],
+	    	p: 1/10,
+	    	actiontype: "dagger",
+	    	target: "ophelia",
+	    	effect: {ophelia: [-0.015, -0.015]
+	    },
+	    dagger_self2: {
 	    	happy: [.4, .7],
 	    	clarity: [0, .4],
 	    	p: 1/10,
@@ -311,12 +335,20 @@ var GAME_SETUP =
 	    	effect: {ophelia: [-0.025, 0]}
 	    },
 	    dagger_self: {
+	    	happy: [0, 0.4],
+	    	clarity: [0.4, 0.7],
+	    	p: 1/15,
+	    	actiontype: "dagger",
+	    	target: "gertrude",
+	    	effect: {gertrude: [-0.01, -0.01]
+	    },
+	    dagger_self2: {
 	    	happy: [.4, .7],
 	    	clarity: [0, .4],
 	    	p: 1/15,
 	    	actiontype: "dagger",
 	    	target: "gertrude",
-	    	effect: {gertrude: [-0.035, 0]}
+	    	effect: {gertrude: [-0.025, 0]}
 	    },
 	    heart_all: {
 	    	happy: [0.7, 1],
