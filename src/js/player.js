@@ -13,8 +13,13 @@ Player.prototype.perform = function(selection) {
 	    if (in_course(op.course) && this.holding_utensil(op)) {
 		for (var target in op.effect) {
 		    if (target == "utensil") {
+			var newUtensil = op.effect[target];
 			if (this.utensil != undefined) {
 			    dropUtensil(this.utensil);
+			    if (this.utensil == newUtensil) {
+				this.utensil = null;
+				return;
+			    }
 			}
 			this.utensil = op.effect[target];
 			liftUtensil(this.utensil, (selection=="fork"));
