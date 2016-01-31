@@ -50,7 +50,7 @@ var GAME_SETUP =
 	    	effect: {ophelia: [.05, 0]}
 	    },
 	    talk: {
-	    	p: 1/20,
+	    	p: 1/15,
 	    	actiontype: "talk",
 	    	target: "player",
 	    },
@@ -145,7 +145,7 @@ var GAME_SETUP =
 	    	effect: {gertrude: [.05, 0]}
 	    },
 	    talk: {
-	    	p: 1/20,
+	    	p: 1/15,
 	    	actiontype: "talk",
 	    	target: "player",
 	    },
@@ -240,7 +240,7 @@ var GAME_SETUP =
 	    	effect: {hamlet: [.05, 0], ophelia: [-0.03, 0]}
 	    },
 	    talk: {
-	    	p: 1/25,
+	    	p: 1/15,
 	    	actiontype: "talk",
 	    	target: "player",
 	    },
@@ -335,7 +335,7 @@ var GAME_SETUP =
 	    	effect: {claudius: [.05, 0]}
 	    },
 	    talk: {
-	    	p: 1/30,
+	    	p: 1/15,
 	    	actiontype: "talk",
 	    	target: "player",
 	    },

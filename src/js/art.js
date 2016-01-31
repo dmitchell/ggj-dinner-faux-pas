@@ -32,25 +32,28 @@ function showState(cmd){
 function showAction(cmd){
     console.log("in art showAction");
     console.log(cmd);
-    if (cmd.target == "all") return;  // temporary hack to enable testing
-    if(cmd.actiontype == "dagger"){
-        throwSomething("dagger",true,heads[cmd.source].x,heads[cmd.source].y,heads[cmd.target].x,heads[cmd.target].y);
-        return;
-    }
-    if(cmd.actiontype == "heart"){
-        throwSomething("heart",false,heads[cmd.source].x,heads[cmd.source].y,heads[cmd.target].x,heads[cmd.target].y);
+    if(cmd.actiontype == "dagger" || cmd.actiontype == "heart"){
+        if(cmd.target == "all") throwMultipleSomething(cmd.actiontype,(cmd.actiontype == "dagger"),cmd.source);
+        else throwSomething( cmd.actiontype,(cmd.actiontype == "dagger"),heads[cmd.source].x,heads[cmd.source].y,heads[cmd.target].x,heads[cmd.target].y);
         return;
     }
     if(cmd.actiontype == "talk"){
         displaySpeech(cmd.source,cmd.topic);
         return;
     }
-    console.log("Unhandle daction:");
+    console.log("Unhandled action:");
     console.log(cmd);
     
     //speak, source, topic
 }
 
+function throwMultipleSomething(thing,rotate,thrower){
+    for(name in heads){
+        if(name != thrower){
+            throwSomething(thing,rotate,heads[thrower].x,heads[thrower].y,heads[name].x,heads[thrower].y);
+        }
+    }
+}
 
 function throwSomething(thing,rotate,sourceX,sourceY,targetX,targetY){
     
