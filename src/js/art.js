@@ -94,7 +94,7 @@ function displaySpeech(who,topic){
     for(var i = 0; i < responses.length; i++){
         var r = responses[i];
         var $res = $("<div class='"+r+"'></div>");
-        
+        $res.data("who",who)
         $res.click(clickResponse)
         $balloon.append($res);
     }
@@ -113,12 +113,18 @@ function displaySpeech(who,topic){
 
 
 function clickResponse(){
-    
+    var $res = $(this);
+    var responseType = $res.attr("class"); //kind of a hack, but the only class on the thing is the response type
+    var responseListener = $res.data("who");
+    GLOBALS.player.speak(responseListener,responseType)
+    $res.parent(".speechballoon").remove();
 }
 
 function clickStage(e){
     alert("class:"+$(this).attr("class")+"\nid:"+$(this).attr('id'));
     
 }
-    
+    $(function(){
+       displaySpeech("ophelia","travel"); 
+    });
 
