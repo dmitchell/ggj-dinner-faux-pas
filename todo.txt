@@ -10,7 +10,11 @@ player speech
 * click and execute effect
 
 player use utensils
-* wire up
+* add listeners for food rather than plate
+
+player state visualization
+* get art
+* update player image
 
 end game
 * art for each NPC

@@ -144,6 +144,11 @@ var GAME_SETUP =
 	    	target: "gertrude",
 	    	effect: {gertrude: [.05, 0]}
 	    },
+	    talk: {
+	    	p: 1/15,
+	    	actiontype: "talk",
+	    	target: "player",
+	    },
 	    sword: {
 		happy: [0, 0.05], // end game
 		p: 0.5, // almost certain to occur in 5 seconds (1 - 0.5^5)
@@ -234,6 +239,11 @@ var GAME_SETUP =
 	    	target: "hamlet",
 	    	effect: {hamlet: [.05, 0], ophelia: [-0.03, 0]}
 	    },
+	    talk: {
+	    	p: 1/15,
+	    	actiontype: "talk",
+	    	target: "player",
+	    },
 	    sword: {
 		happy: [0, 0.05], // end game
 		p: 0.5, // almost certain to occur in 5 seconds (1 - 0.5^5)
@@ -323,6 +333,11 @@ var GAME_SETUP =
 	    	actiontype: "heart",
 	    	target: "claudius",
 	    	effect: {claudius: [.05, 0]}
+	    },
+	    talk: {
+	    	p: 1/15,
+	    	actiontype: "talk",
+	    	target: "player",
 	    },
 	    sword: {
 		happy: [0, 0.05], // end game

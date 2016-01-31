@@ -34,6 +34,7 @@ Player.prototype.speak = function(target, emoticon) {
 
     speechDecl = speechDecl[emoticon];
     if (speechDecl != undefined) {
+	listLog(speechDecl);
 	for (var target in speechDecl) {
 	    GLOBALS.npcs[target].react(speech.effect[target]);
 	}

@@ -1,6 +1,6 @@
 var PLAYER_OPS = {
     operations: {
-	plate: [{  // what's selected
+	food: [{  // what's selected
 	    course: "main",     // optional gate
 	    utensil: "fork",    // optional gate
 	    effect: {
