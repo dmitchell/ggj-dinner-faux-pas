@@ -4,14 +4,14 @@ var PLAYER_OPS = {
 	    course: "main",     // optional gate
 	    utensil: "fork",    // optional gate
 	    effect: {
-		gertrude: [0.15, 0.1]
+		gertrude: [0.04, 0.02]
 	    }
 	    
 	},
 	{
 	    course: "main",
 	    utensil: "knife",
-	    effect: {gertrude: [0.1, 0.15]
+	    effect: {gertrude: [0.02, 0.04]
 	    }
 	},
 	{
@@ -37,7 +37,7 @@ var PLAYER_OPS = {
 	{
 	    course: "first",
 	    utensil: "spoon",
-	    effect: {gertrude: [0.15, 0.15]}
+	    effect: {gertrude: [0.03, 0.03]}
 	},
 	{
 	    course: "first",
@@ -47,7 +47,7 @@ var PLAYER_OPS = {
 	{
 	    course: "second",
 	    utensil: "fork",
-	    effect: {gertrude: [0.15, 0.15]}
+	    effect: {gertrude: [0.03, 0.03]}
 	},
 	{
 	    course: "second",
@@ -85,13 +85,13 @@ var PLAYER_OPS = {
     	hamlet: {
 	      ent: { 
 	          excited: {
-        	    hamlet: [0.1, 0]
+        	    hamlet: [0.05, 0]
 	          },
 	          confused: {
 	              hamlet: [-0.1, 0]
 	          },
 	          neutral: {
-	              hamlet: [0, 0.1]
+	              hamlet: [0, 0.05]
 	          },
 	          suspicious: {
 	              hamlet: [-0.1, 0]
@@ -105,30 +105,30 @@ var PLAYER_OPS = {
 	                hamlet: [-0.1, 0]
 	            },
 	            confused: {
-	                hamlet: [0, 0.1]
+	                hamlet: [0, 0.05]
 	            },
 	            neutral: {
 	                hamlet: [0, -0.1]
 	            },
 	            suspicious: {
-	                hamlet: [0, 0.1]
+	                hamlet: [0, 0.05]
 	            },
 	            angry: {
-	                hamlet: [0.1, 0]
+	                hamlet: [0.05, 0]
 	            }
 	        },
 	        food: {
 	            excited: {
-	                hamlet: [0, 0.1]
+	                hamlet: [0, 0.05]
 	            },
 	            confused: {
-	                hamlet: [0.1, 0]
+	                hamlet: [0.05, 0]
 	            },
 	            neutral: {
 	                hamlet: [-0.1, 0]
 	            },
 	            suspicious: {
-	                hamlet: [0.1, 0]
+	                hamlet: [0.05, 0]
 	            },
 	            angry: {
 	                hamlet: [0, -0.1]
@@ -142,30 +142,30 @@ var PLAYER_OPS = {
 	                hamlet: [0, -0.1]
 	            },
 	            neutral: {
-	                hamlet: [0, 0.1]
+	                hamlet: [0, 0.05]
 	            },
 	            suspicious: {
-	                hamlet: [0.1, 0]
+	                hamlet: [0.05, 0]
 	            },
 	            angry: {
-	                hamlet: [0, 0.1]
+	                hamlet: [0, 0.05]
 	            }
 	        },
 	        occult: {
 	            excited: {
-	                hamlet: [0.1, 0]
+	                hamlet: [0.1, 0], claudius: [-0.3, 0]
 	            },
 	            confused: {
-	                hamlet: [0, 0.1]
+	                hamlet: [0, 0.05]
 	            },
 	            neutral: {
-	                hamlet: [0, -0.1]
+	                hamlet: [0, -0.2]
 	            },
 	            suspicious: {
-	                hamlet: [0, -0.1]
+	                hamlet: [0, -0.3], claudius: [0, 0.1]
 	            },
 	            angry: {
-	                hamlet: [-0.1, 0]
+	                hamlet: [-0.25, 0]
 	            }
 	        },
 	        travel: {
@@ -173,13 +173,13 @@ var PLAYER_OPS = {
 	                hamlet: [0, -0.1]
 	            },
 	            confused: {
-	                hamlet: [0.1, 0]
+	                hamlet: [0.05, 0]
 	            },
 	            neutral: {
-	                hamlet: [0.1, 0]
+	                hamlet: [0, -0.1]
 	            },
 	            suspicious: {
-	                hamlet: [0, 0.1]
+	                hamlet: [0, 0.05]
 	            },
 	            angry: {
 	                hamlet: [-0.1, 0]
@@ -192,13 +192,13 @@ var PLAYER_OPS = {
         	    claudius: [-0.1, 0]
 	          },
 	          confused: {
-	              claudius: [0.1, 0]
+	              claudius: [0.05, 0], hamlet: [-0.1, 0]
 	          },
 	          neutral: {
-	              claudius: [0.1, 0]
+	              claudius: [0, -0.1]
 	          },
 	          suspicious: {
-	              claudius: [0, 0.1]
+	              claudius: [0, 0.05]
 	          },
 	          angry: {
 	              claudius: [0, -0.1]
@@ -212,13 +212,13 @@ var PLAYER_OPS = {
 	                claudius: [-0.1, 0]
 	            },
 	            neutral: {
-	                claudius: [0.1, 0]
+	                claudius: [0.05, 0]
 	            },
 	            suspicious: {
 	                claudius: [0, -0.1]
 	            },
 	            angry: {
-	                claudius: [0, 0.1]
+	                claudius: [0, 0.05]
 	            }
 	        },
 	        food: {
@@ -226,10 +226,10 @@ var PLAYER_OPS = {
 	                claudius: [-0.1, 0]
 	            },
 	            confused: {
-	                claudius: [0.1, 0]
+	                claudius: [0.05, 0]
 	            },
 	            neutral: {
-	                claudius: [0, 0.1]
+	                claudius: [0, 0.05]
 	            },
 	            suspicious: {
 	                claudius: [0, -0.1]
@@ -240,16 +240,16 @@ var PLAYER_OPS = {
 	        },
 	        gov: {
 	            excited: {
-	                claudius: [0.1, 0]
+	                claudius: [0.25, 0]
 	            },
 	            confused: {
-	                claudius: [-0.1, 0]
+	                claudius: [-0.2, 0]
 	            },
 	            neutral: {
-	                claudius: [0, -0.1]
+	                claudius: [0, -0.25]
 	            },
 	            suspicious: {
-	                claudius: [-0.1, 0]
+	                claudius: [-0.35, 0]
 	            },
 	            angry: {
 	                claudius: [0, 0.1]
@@ -257,24 +257,24 @@ var PLAYER_OPS = {
 	        },
 	        occult: {
 	            excited: {
-	                claudius: [-0.1, 0]
+	                claudius: [-0.3, 0], hamlet: [0.1, 0]
 	            },
 	            confused: {
 	                claudius: [0, 0.1]
 	            },
 	            neutral: {
-	                claudius: [0, -0.1]
+	                claudius: [0, -0.25]
 	            },
 	            suspicious: {
-	                claudius: [0.1, 0]
+	                claudius: [0.1, 0], hamlet: [-0.3, 0]
 	            },
 	            angry: {
-	                claudius: [0.1, 0]
+	                claudius: [0.1, 0], hamlet: [-0.3, 0]
 	            }
 	        },
 	        travel: {
 	            excited: {
-	                claudius: [0, 0.1]
+	                claudius: [0, 0.05]
 	            },
 	            confused: {
 	                claudius: [0, -0.1]
@@ -286,7 +286,7 @@ var PLAYER_OPS = {
 	                claudius: [-0.1, 0]
 	            },
 	            angry: {
-	                claudius: [0.1, 0]
+	                claudius: [0.05, 0]
 	            }
 	        }
 	},
@@ -296,7 +296,7 @@ var PLAYER_OPS = {
         	    ophelia: [0, -0.1]
 	          },
 	          confused: {
-	              ophelia: [0.1, 0]
+	              ophelia: [0.05, 0]
 	          },
 	          neutral: {
 	              ophelia: [-0.1, 0]
@@ -305,7 +305,7 @@ var PLAYER_OPS = {
 	              ophelia: [0, -0.1]
 	          },
 	          angry: {
-	              ophelia: [0, 0.1]
+	              ophelia: [0, 0.05]
 	          }
 	      },
 	      family: {
@@ -316,27 +316,27 @@ var PLAYER_OPS = {
 	                ophelia: [0, 0.1]
 	            },
 	            neutral: {
-	                ophelia: [0, -0.1]
+	                ophelia: [0, -0.2]
 	            },
 	            suspicious: {
-	                ophelia: [-0.1, 0]
+	                ophelia: [-0.3, 0], gertrude: [0.1, 0]
 	            },
 	            angry: {
-	                ophelia: [0, -0.1]
+	                ophelia: [0, -0.25]
 	            }
 	        },
 	        food: {
 	            excited: {
-	                ophelia: [0, 0.1]
+	                ophelia: [0, -0.1]
 	            },
 	            confused: {
 	                ophelia: [-0.1, 0]
 	            },
 	            neutral: {
-	                ophelia: [0.1, 0]
+	                ophelia: [0.05, 0]
 	            },
 	            suspicious: {
-	                ophelia: [0, 0.1]
+	                ophelia: [0, 0.05]
 	            },
 	            angry: {
 	                ophelia: [0, -0.1]
@@ -347,10 +347,10 @@ var PLAYER_OPS = {
 	                ophelia: [0, -0.1]
 	            },
 	            confused: {
-	                ophelia: [0, 0.1]
+	                ophelia: [0, 0.05]
 	            },
 	            neutral: {
-	                ophelia: [0.1, 0]
+	                ophelia: [0.05, 0]
 	            },
 	            suspicious: {
 	                ophelia: [0, -0.1]
@@ -361,13 +361,13 @@ var PLAYER_OPS = {
 	        },
 	        occult: {
 	            excited: {
-	                ophelia: [0, 0.1]
+	                ophelia: [0, -0.1]
 	            },
 	            confused: {
-	                ophelia: [0.1, 0]
+	                ophelia: [0.05, 0]
 	            },
 	            neutral: {
-	                ophelia: [0, 0.1]
+	                ophelia: [0, 0.05]
 	            },
 	            suspicious: {
 	                ophelia: [-0.1, 0]
@@ -384,13 +384,13 @@ var PLAYER_OPS = {
 	                ophelia: [0, -0.1]
 	            },
 	            neutral: {
-	                ophelia: [0, 0.1]
+	                ophelia: [0, 0.05]
 	            },
 	            suspicious: {
-	                ophelia: [0.1, 0]
+	                ophelia: [0.05, 0], hamlet: [0, 0.05]
 	            },
 	            angry: {
-	                ophelia: [0.1, 0]
+	                ophelia: [0.02, 0]
 	            }
 	        }
 	},
@@ -400,21 +400,21 @@ var PLAYER_OPS = {
         	    gertrude: [0, -0.1]
 	          },
 	          confused: {
-	              gertrude: [0, 0.1]
+	              gertrude: [0, 0.05]
 	          },
 	          neutral: {
 	              gertrude: [-0.1, 0]
 	          },
 	          suspicious: {
-	              gertrude: [0.1, 0]
+	              gertrude: [0.05, 0]
 	          },
 	          angry: {
-	              gertrude: [0, 0.1]
+	              gertrude: [0, -0.1]
 	          }
 	      },
 	      family: {
 	            excited: {
-	                gertrude: [0, 0.1]
+	                gertrude: [0, 0.05]
 	            },
 	            confused: {
 	                gertrude: [-0.1, 0]
@@ -423,7 +423,7 @@ var PLAYER_OPS = {
 	                gertrude: [0, -0.1]
 	            },
 	            suspicious: {
-	                gertrude: [0.1, 0]
+	                gertrude: [0.05, 0]
 	            },
 	            angry: {
 	                gertrude: [-0.1, 0]
@@ -434,27 +434,27 @@ var PLAYER_OPS = {
 	                gertrude: [0.1, 0]
 	            },
 	            confused: {
-	                gertrude: [0, -0.1]
+	                gertrude: [0, -0.25]
 	            },
 	            neutral: {
 	                gertrude: [0, 0.1]
 	            },
 	            suspicious: {
-	                gertrude: [-0.1, 0]
+	                gertrude: [-0.2, 0]
 	            },
 	            angry: {
-	                gertrude: [-0.1, 0]
+	                gertrude: [-0.3, 0]
 	            }
 	        },
 	        gov: {
 	            excited: {
-	                gertrude: [0, 0.1]
+	                gertrude: [0, 0.05]
 	            },
 	            confused: {
-	                gertrude: [0.1, 0]
+	                gertrude: [0, -0.1]
 	            },
 	            neutral: {
-	                gertrude: [0.1, 0]
+	                gertrude: [0.05, 0]
 	            },
 	            suspicious: {
 	                gertrude: [-0.1, 0]
@@ -468,24 +468,24 @@ var PLAYER_OPS = {
 	                gertrude: [-0.1, 0]
 	            },
 	            confused: {
-	                gertrude: [0.1, 0]
+	                gertrude: [0.05, 0]
 	            },
 	            neutral: {
 	                gertrude: [0, -0.1]
 	            },
 	            suspicious: {
-	                gertrude: [0, 0.1]
+	                gertrude: [0, 0.05]
 	            },
 	            angry: {
-	                gertrude: [0.1, 0]
+	                gertrude: [0, -0.1]
 	            }
 	        },
 	        travel: {
 	            excited: {
-	                gertrude: [0.1, 0]
+	                gertrude: [0.05, 0]
 	            },
 	            confused: {
-	                gertrude: [0, 0.1]
+	                gertrude: [0, 0.05]
 	            },
 	            neutral: {
 	                gertrude: [-0.1, 0]

@@ -1,14 +1,14 @@
 var GAME_SETUP = 
 {npc:{ 
  hamlet: 
-   {happy: .65, // starting value scale 0..1
-    clarity: .3,
+   {happy: .55, // starting value scale 0..1
+    clarity: .25,
     operations: {
 	anytime: {
 	    dagger_all: {
 		happy: [0, 0.4], // if happiness between these
 		clarity: [0, 0.4],
-		p: 1/15, // once per minute
+		p: 1/13, // once per minute
 		actiontype: "dagger",
 		target: "all", // or all or player
 		effect: {claudius: [-0.06, 0], ophelia: [-0.08, 0], gertrude: [-0.03, 0]} // this model has the weakness
@@ -20,7 +20,7 @@ var GAME_SETUP =
 	    dagger_claudius: {
 	    	happy: [0, 0.4],
 	    	clarity: [0.7, 1],
-	    	p: 1/15,
+	    	p: 1/13,
 	    	actiontype: "dagger",
 	    	target: "claudius",
 	    	effect: {claudius: [-0.05, 0]}
@@ -28,7 +28,7 @@ var GAME_SETUP =
 	    dagger_self: {
 	    	happy: [.4, .7],
 	    	clarity: [0, .4],
-	    	p: 1/15,
+	    	p: 1/13,
 	    	actiontype: "dagger",
 	    	target: "hamlet",
 	    	effect: {hamlet: [-0.07, 0]}
@@ -39,18 +39,18 @@ var GAME_SETUP =
 	    	p: 1/15,
 	    	actiontype: "heart",
 	    	target: "all",
-	    	effect: {claudius: [0.06, 0], ophelia: [0.08, 0], gertrude: [0.03, 0]}
+	    	effect: {claudius: [0.03, 0], ophelia: [0.04, 0], gertrude: [0.02, 0]}
 	    },
 	    heart_ophelia: {
 	    	happy: [.7, 1],
 	    	clarity: [.4, .7],
-	    	p: 1/15,
+	    	p: 1/25,
 	    	actiontype: "heart",
 	    	target: "ophelia",
-	    	effect: {ophelia: [.05, 0]}
+	    	effect: {ophelia: [.04, 0]}
 	    },
 	    talk: {
-	    	p: 1/15,
+	    	p: 1/25,
 	    	actiontype: "talk",
 	    	target: "player",
 	    },
@@ -100,8 +100,8 @@ var GAME_SETUP =
   ]
  },
  claudius: 
-   {happy: .6, // starting value scale 0..1
-    clarity: .9,
+   {happy: .55, // starting value scale 0..1
+    clarity: .85,
     operations: {
 	anytime: {
 	    dagger_all: {
@@ -115,7 +115,7 @@ var GAME_SETUP =
 	    dagger_hamlet: {
 	    	happy: [0, 0.4],
 	    	clarity: [0.7, 1],
-	    	p: 1/15,
+	    	p: 1/10,
 	    	actiontype: "dagger",
 	    	target: "hamlet",
 	    	effect: {hamlet: [-0.05, 0]}
@@ -134,7 +134,7 @@ var GAME_SETUP =
 	    	p: 1/15,
 	    	actiontype: "heart",
 	    	target: "all",
-	    	effect: {hamlet: [0.06, 0], ophelia: [0.03, 0], gertrude: [0.08, 0]}
+	    	effect: {hamlet: [0.02, 0], ophelia: [0.02, 0], gertrude: [0.04, 0]}
 	    },
 	    heart_gertrude: {
 	    	happy: [.7, 1],
@@ -142,10 +142,10 @@ var GAME_SETUP =
 	    	p: 1/15,
 	    	actiontype: "heart",
 	    	target: "gertrude",
-	    	effect: {gertrude: [.05, 0]}
+	    	effect: {gertrude: [.04, 0]}
 	    },
 	    talk: {
-	    	p: 1/15,
+	    	p: 1/25,
 	    	actiontype: "talk",
 	    	target: "player",
 	    },
@@ -195,8 +195,8 @@ var GAME_SETUP =
   ]
  },
  ophelia: 
-   {happy: .7, // starting value scale 0..1
-    clarity: .5,
+   {happy: .55, // starting value scale 0..1
+    clarity: .45,
     operations: {
 	anytime: {
 	    dagger_all: {
@@ -226,10 +226,10 @@ var GAME_SETUP =
 	    heart_all: {
 	    	happy: [0.7, 1],
 	    	clarity: [0.7, 1],
-	    	p: 1/15,
+	    	p: 1/20,
 	    	actiontype: "heart",
 	    	target: "all",
-	    	effect: {claudius: [0.06, 0], gertrude: [0.08, 0], hamlet: [0.03, 0]}
+	    	effect: {claudius: [0.02, 0], gertrude: [0.03, 0], hamlet: [0.03, 0]}
 	    },
 	    heart_hamlet: {
 	    	happy: [.7, 1],
@@ -237,10 +237,10 @@ var GAME_SETUP =
 	    	p: 1/15,
 	    	actiontype: "heart",
 	    	target: "hamlet",
-	    	effect: {hamlet: [.05, 0], ophelia: [-0.03, 0]}
+	    	effect: {hamlet: [.04, 0], ophelia: [-0.03, 0]}
 	    },
 	    talk: {
-	    	p: 1/15,
+	    	p: 1/30,
 	    	actiontype: "talk",
 	    	target: "player",
 	    },
@@ -290,8 +290,8 @@ var GAME_SETUP =
   ]
  },
  gertrude: 
-   {happy: .6, // starting value scale 0..1
-    clarity: .9,
+   {happy: .55, // starting value scale 0..1
+    clarity: .8,
     operations: {
 	anytime: {
 	    dagger_all: {
@@ -335,7 +335,7 @@ var GAME_SETUP =
 	    	effect: {claudius: [.05, 0]}
 	    },
 	    talk: {
-	    	p: 1/15,
+	    	p: 1/20,
 	    	actiontype: "talk",
 	    	target: "player",
 	    },
