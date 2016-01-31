@@ -24,11 +24,12 @@ Player.prototype.perform = function(selection) {
 }
 
 Player.prototype.speak = function(target, emoticon) {
-    var speaker = GLOBALS.npcs[target];
-    var speechDecl = this.speech[speaker];
+    var speechDecl = this.speech[target];
     if (speechDecl == undefined) return;
-    
+
+    var speaker = GLOBALS.npcs[target];
     var topic = speaker.topic;
+    
     speechDecl = speechDecl[topic];
     if (speechDecl == undefined) return;
 
