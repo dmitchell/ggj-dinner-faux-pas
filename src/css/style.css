@@ -398,12 +398,18 @@ transform:rotate(160deg);
 	background-size: 75px 75px;
 	left:0px;
 	border-radius:20px;
-	opacity: .75;
+	opacity: .3;
 	cursor: pointer;
+	transition: .5s;
+	background-color:inherit;
 	
 }
 .speechballoon:hover div {
 	opacity: 1;
+	
+}
+.speechballoon div:hover {
+	background-color:yellow;
 }
 
 .speechballoon div.angry{

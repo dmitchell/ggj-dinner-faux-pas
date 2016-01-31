@@ -84,13 +84,24 @@ function displayCourse(courseName){
 }
 
 
-
+var responses = ["angry","conf","excited","neutral","susp"];
 
 function displaySpeech(who,topic){
     var $balloon = $('<div class="speechballoon '+who+' '+topic+'">');
     var $img = $('<img src="css/speech/icon_'+topic+'.png">');
     $balloon.append($img);
+    
+    for(var i = 0; i < responses.length; i++){
+        var r = responses[i];
+        var $res = $("<div class='"+r+"'></div>");
+        
+        $res.click(clickResponse)
+        $balloon.append($res);
+    }
+    
     $("#stage").append($balloon);
+    
+    
                    /* 
                    <div class="angry"></div>
                     <div class="conf"></div>
@@ -100,6 +111,10 @@ function displaySpeech(who,topic){
                     <div class="susp"></div>*/
 }
 
+
+function clickResponse(){
+    
+}
 
 function clickStage(e){
     alert("class:"+$(this).attr("class")+"\nid:"+$(this).attr('id'));
