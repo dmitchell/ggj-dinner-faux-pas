@@ -37,7 +37,7 @@ var PLAYER_OPS = {
 	{
 	    course: "first",
 	    utensil: "spoon",
-	    effect: {gertrude: [0.03, 0.03]}
+	    effect: {gertrude: [0.03, 0.25]}
 	},
 	{
 	    course: "first",
@@ -47,7 +47,7 @@ var PLAYER_OPS = {
 	{
 	    course: "second",
 	    utensil: "fork",
-	    effect: {gertrude: [0.03, 0.03]}
+	    effect: {gertrude: [0.03, 0.25]}
 	},
 	{
 	    course: "second",
