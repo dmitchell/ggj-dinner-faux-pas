@@ -90,7 +90,7 @@ function displayCourse(courseName){
         $stage.append($food);
         
     }
-    GLOBALS.eaten = 6;
+    GLOBALS.eaten = 4;
     var $playerplate = $(".plate.player");
     var $food = $("<div class='food player  "+foodName+"'></div>");   
             $food.css("top",$playerplate.css("top"));
@@ -152,7 +152,6 @@ function liftUtensil(utensil, rotateOtherWay) {
 
 function eatFood() {
     GLOBALS.eaten--;
-    console.log(GLOBALS.eaten);
     if (GLOBALS.eaten > 0) {
 	$(".food.player").addClass("eaten");
     } else {
@@ -207,7 +206,26 @@ function preload(sources, prefix)
   }
 }
 
-
+function endGame(rage_master) {
+    switch (rage_master) {
+    case null:
+	msg = "Dinner's over: everyone lived!";
+	break;
+    case "ophelia":
+	msg = "Ophelia killed herself";
+	break;
+    case "hamlet":
+	msg = "Hamlet killed Claudius";
+	break;
+    case "claudius":
+	msg = "Claudius killed Hamlet";
+	break;
+    case "gertrude":
+	msg = "Gertrude killed you for being rude";
+	break;
+    } 
+    $("#stage").append("<h1>"+msg+"</h1>");
+}
 
 
 $(preloadStatesEtc); //preload images on boot

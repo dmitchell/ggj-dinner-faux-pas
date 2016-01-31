@@ -1,11 +1,9 @@
-player use utensils
-* show selected utensil in fist
-* perhaps give negative feedbak for "wrong" actions
-
 end game
 * art for each NPC
 ** Hamlet: raised sword toward Claudius
 ** Claudius: raised sword toward Hamlet
 ** Gertrude: knife at player
 ** Ophelia: suicide
+
+start screen
 
