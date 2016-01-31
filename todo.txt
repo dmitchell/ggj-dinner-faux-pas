@@ -2,12 +2,8 @@ end game
 * clear speech balloons
 * end screens
 
-toggle utensils
-
 make food clickability more obvious
 
 npc reaction to delta aka responsiveness
-
-music
 
 toast animation

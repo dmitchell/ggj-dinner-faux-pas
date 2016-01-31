@@ -324,9 +324,17 @@ transform:rotate(160deg);
 	height:31px;
 	background-size:35px 31px;
 	z-index:200;
-	
-	
 }
+
+.glass {
+	position:absolute;
+	background-image:url(wineglass.png);
+	width:27px;
+	height:64px;
+	background-size:27px 64px;
+	z-index:200;
+}
+
 .food {
 	z-index:400;
 }

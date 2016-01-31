@@ -10,8 +10,21 @@ var heads = {
     "gertrude":{x:480,y:230},
     "ophelia":{x:130,y:280},
     "claudius":{x:300,y:260}
-    
 }
+
+var tableCenterX = (heads.hamlet.x - heads.ophelia.x)/2 + heads.ophelia.x;
+
+var glassStart = {
+    "hamlet":{x: halfWayToCenter(heads.hamlet.x), y: 270 + heads.hamlet.y},
+    "gertrude":{x: halfWayToCenter(heads.gertrude.x), y: 270 + heads.gertrude.y},
+    "ophelia":{x: halfWayToCenter(heads.ophelia.x), y: 270 + heads.ophelia.y},
+    "claudius":{x: halfWayToCenter(heads.claudius.x), y: 270 + heads.claudius.y},
+}
+
+function halfWayToCenter(x) {
+    return x - (x - tableCenterX)/4;
+}
+
 var courseFood = {
     "first":"soup",
     "second":"salad",
@@ -68,9 +81,17 @@ function showAction(cmd){
         else throwSomething( cmd.actiontype,(cmd.actiontype == "dagger"),heads[cmd.source].x,heads[cmd.source].y,heads[cmd.target].x,heads[cmd.target].y);
         return;
     }
-    if(cmd.actiontype == "talk"){
+    else if(cmd.actiontype == "talk"){
         displaySpeech(cmd.source,cmd.topic);
         return;
+    }
+    else if(cmd.actiontype == "toast") {
+	throwSomething(
+	    "glass", false,
+	    glassStart[cmd.source].x, glassStart[cmd.source].y,
+	    glassStart[cmd.source].x, glassStart[cmd.source].y - 240);
+	setTimeout(othersRaise, 750, cmd.source);
+	return;
     }
     console.log("Unhandled action:");
     console.log(cmd);
@@ -83,6 +104,17 @@ function throwMultipleSomething(thing,rotate,thrower){
         if(name != thrower){
             throwSomething(thing,rotate,heads[thrower].x,heads[thrower].y,heads[name].x,heads[name].y);
         }
+    }
+}
+
+function othersRaise(initiator) {
+    for (var name in glassStart) {
+	if (name != initiator) {
+	    throwSomething(
+		"glass", false,
+		glassStart[name].x, glassStart[name].y,
+		glassStart[name].x, glassStart[name].y - 240);
+	}
     }
 }
 
@@ -115,7 +147,6 @@ function displayCourse(courseName){
     for(name in heads){
         var $npcplate = $(".plate."+name);
         var $food = $("<div class='food npc eaten "+foodName+"'></div>");
-        console.log($npcplate.css("top"));
         $food.css("top",$npcplate.css("top"));
         $food.css("left",$npcplate.css("left"));
         $stage.append($food);
