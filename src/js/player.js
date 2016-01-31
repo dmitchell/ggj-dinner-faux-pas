@@ -37,7 +37,7 @@ Player.prototype.speak = function(target, emoticon) {
     if (speechDecl != undefined) {
 	listLog(speechDecl);
 	for (var target in speechDecl) {
-	    GLOBALS.npcs[target].react(speech.effect[target]);
+	    GLOBALS.npcs[target].react(speechDecl[target]);
 	}
     }
 }
