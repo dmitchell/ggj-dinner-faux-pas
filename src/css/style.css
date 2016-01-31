@@ -458,4 +458,34 @@ transform:rotate(160deg);
 	padding:20px;
 }
 
+.delta {
+	position: absolute;
+	width:100px;
+	height:100px;
+	background-size:100px 100px;
+
+}
+
+.delta.angry {
+	background-image: url(speech/speech_angry.png);
+}
+.delta.susp {
+	background-image: url(speech/speech_susp.png);
+}
+.delta.conf {
+	background-image: url(speech/speech_conf.png);
+}
+.delta.excited {
+	background-image: url(speech/speech_excited.png);
+}
+
+.delta.neutral {
+	background-image: url(speech/speech_neutral.png);
+}
+
+
+
+
+
+
 

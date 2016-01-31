@@ -18,13 +18,44 @@ var courseFood = {
     "main":"meat"
 };
  
+ 
+var prevHappy = {};
+var prevClarity = {};
 
-function showState(cmd){
+function showState(npc){
     console.log("in art showState");
-    console.log(cmd);
+    console.log(npc);
     
-    var mood = mapHappyAndClarityToImageState(cmd.happy,cmd.clarity);
-    $("#"+cmd.name).css("background-image","url(css/people/"+cmd.name+"_"+mood+".png)");
+    var mood = mapHappyAndClarityToImageState(npc.happy,npc.clarity);
+    $("#"+npc.name).css("background-image","url(css/people/"+npc.name+"_"+mood+".png)");
+    
+    
+    var oldHappy = prevHappy[npc.name];
+    var oldClarity = prevClarity[npc.name];
+    console.log("for "+npc.name+":::");
+    
+    
+    var deltaIcon = null;
+    
+    if(oldHappy){
+        console.log("happy delta::"+ (npc.happy - oldHappy));
+        if(npc.happy > oldHappy) deltaIcon = "excited";
+        if(npc.happy < oldHappy) deltaIcon = "angry";
+        
+    }
+    if(oldClarity){
+        console.log("happy delta::"+ (npc.clarity - oldClarity));
+        if(npc.clarity > oldClarity) deltaIcon = "susp";
+        if(npc.clarity < oldClarity) deltaIcon = "conf";
+    }
+    
+    prevHappy[npc.name] = npc.happy;
+    prevClarity[npc.name] = npc.clarity;
+    
+    if(! deltaIcon){
+        deltaIcon = "neutral";
+    }
+    throwSomething("delta "+deltaIcon,false,heads[npc.name].x-50,heads[npc.name].y,heads[npc.name].x-50,heads[npc.name].y-200);
     //cmd.happy;
     //cmd.clarity;
 }
@@ -50,7 +81,7 @@ function showAction(cmd){
 function throwMultipleSomething(thing,rotate,thrower){
     for(name in heads){
         if(name != thrower){
-            throwSomething(thing,rotate,heads[thrower].x,heads[thrower].y,heads[name].x,heads[thrower].y);
+            throwSomething(thing,rotate,heads[thrower].x,heads[thrower].y,heads[name].x,heads[name].y);
         }
     }
 }
