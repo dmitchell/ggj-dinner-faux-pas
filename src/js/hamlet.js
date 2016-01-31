@@ -187,7 +187,7 @@ var GAME_SETUP =
 	drinks: {
 	    // shows how some operators can have different effects during different courses
 	    toast: {
-		happy: [.6, 1.0],
+		happy: [.55, 1.0],
 		clarity: [0, 1.0],  // anytime
 		p: 1/(60 * 3), // once every 3 mins
 		actiontype: "toast",
@@ -198,7 +198,7 @@ var GAME_SETUP =
 	main: {
 	    // shows how some operators can have different effects during different courses
 	    toast: {
-		happy: [.6, 1.0],
+		happy: [.55, 1.0],
 		clarity: [0, 1.0],  // anytime
 		p: 1/(60 * 3), // once every 3 mins
 		actiontype: "toast",
@@ -302,7 +302,7 @@ var GAME_SETUP =
 	drinks: {
 	    // shows how some operators can have different effects during different courses
 	    toast: {
-		happy: [.6, 1.0],
+		happy: [.55, 1.0],
 		clarity: [0, 1.0],  // anytime
 		p: 1/(60 * 3), // once every 3 mins
 		actiontype: "toast",
@@ -313,7 +313,7 @@ var GAME_SETUP =
 	main: {
 	    // shows how some operators can have different effects during different courses
 	    toast: {
-		happy: [.6, 1.0],
+		happy: [.55, 1.0],
 		clarity: [0, 1.0],  // anytime
 		p: 1/(60 * 3), // once every 3 mins
 		actiontype: "toast",
@@ -417,7 +417,7 @@ var GAME_SETUP =
 	drinks: {
 	    // shows how some operators can have different effects during different courses
 	    toast: {
-		happy: [.6, 1.0],
+		happy: [.55, 1.0],
 		clarity: [0, 1.0],  // anytime
 		p: 1/(60 * 3), // once every 3 mins
 		actiontype: "toast",
@@ -428,7 +428,7 @@ var GAME_SETUP =
 	main: {
 	    // shows how some operators can have different effects during different courses
 	    toast: {
-		happy: [.6, 1.0],
+		happy: [.55, 1.0],
 		clarity: [0, 1.0],  // anytime
 		p: 1/(60 * 3), // once every 3 mins
 		actiontype: "toast",
