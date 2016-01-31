@@ -19,7 +19,7 @@ $(document).ready(function(){
     $(".plate.player").click(startItUp);
     
     
-    lowLag.init();
+    lowLag.init({"force":"audioTag"});
     lowLag.loadLongPlay("sound/Oliver Getz - Fugue In E Minor.mp3");
     
 });

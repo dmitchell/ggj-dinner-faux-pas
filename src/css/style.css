@@ -3,17 +3,33 @@ body {
 	background-image: url(background.jpg);
 	background-size: cover;
 }
-
+.endscreen {
+	width:800px;
+	height:800px;
+		margin:auto;
+	
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
 
 #stage {
 	border:1px dashed black;
 	width:800px;
 	height:800px;
 	background-color:#ffffdd;
-	position:relative;
+	/*position:relative;*/
 	
 	overflow: hidden;
 	margin:auto;
+	
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
 	
 }
 #stage div {

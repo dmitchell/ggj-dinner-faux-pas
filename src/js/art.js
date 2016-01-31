@@ -246,7 +246,7 @@ function preload(sources, prefix)
 }
 
 function endGame(rage_master) {
-    switch (rage_master) {
+    /*switch (rage_master) {
     case null:
 	msg = "Dinner's over: everyone lived!";
 	break;
@@ -262,8 +262,12 @@ function endGame(rage_master) {
     case "gertrude":
 	msg = "Gertrude killed you for being rude";
 	break;
-    } 
-    $("#stage").append("<h1>"+msg+"</h1>");
+    } */
+    //$("#stage").append("<h1>"+msg+"</h1>");
+    if(! rage_master) rage_master = "happy";
+    $("#stage").hide();
+    $("body").append("<img class='endscreen' src='css/endscreens/"+rage_master+".jpg'>");
+    //$("#stage").append("<h1>"+msg+"</h1>");
 }
 
 
