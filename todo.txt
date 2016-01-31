@@ -1,14 +1,3 @@
-npc speech
-* add actions to hamlet.js
-* write showAction
-** show topic
-** show emoticons
-** set event to remove speech baloon
-** on removal, set npc.topic to null
-
-player speech
-* click and execute effect
-
 player use utensils
 * add listeners for food rather than plate
 

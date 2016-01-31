@@ -114,7 +114,9 @@ function displaySpeech(who,topic){
     }
     
     $("#stage").append($balloon);
-    
+    setTimeout(function() { $balloon.remove();
+			    GLOBALS.npcs[who].topic = null; }, 
+	       15000);
     
                    /* 
                    <div class="angry"></div>

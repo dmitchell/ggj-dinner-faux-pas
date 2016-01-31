@@ -29,13 +29,14 @@ Player.prototype.speak = function(target, emoticon) {
 
     var speaker = GLOBALS.npcs[target];
     var topic = speaker.topic;
-    
+    speaker.topic = null; // clear topic
+
     speechDecl = speechDecl[topic];
     if (speechDecl == undefined) return;
 
     speechDecl = speechDecl[emoticon];
     if (speechDecl != undefined) {
-	listLog(speechDecl);
+	console.log(target + " received " + emoticon);
 	for (var target in speechDecl) {
 	    GLOBALS.npcs[target].react(speechDecl[target]);
 	}
