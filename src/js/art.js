@@ -136,6 +136,14 @@ function clickResponse(){
     $res.parent(".speechballoon").remove();
 }
 
+function dropUtensil(utensil) {
+    $("." + utensil + ".player").css({"transform":  "", "z-index": ""});
+}
+
+function liftUtensil(utensil) {
+    $("." + utensil + ".player").css({"transform": "skewX(-30deg)", "z-index": 500});
+}
+
 function clickStage(e){
     var cssClass = $(this).attr("class");
     var playerIdx = cssClass.lastIndexOf("player");
@@ -153,34 +161,7 @@ function mapHappyAndClarityToImageState(happy,clarity){
     return "neutral";
 }
 
-/*
 
- {
-    happy: [0, .4],
-    clarity: [0, .4],
-    image: "hamlet_angry.jpg"
-  },
-  {
-  	happy: [.7, 1],
-  	clarity: [0, .4],
-  	image: "hamlet_confused.jpg"
-  },
-  {
-  	happy: [0, .4],
-  	clarity: [.7, 1],
-  	image: "hamlet_suspicious.jpg"
-  },
-  {
-  	happy: [.7, 1],
-  	clarity: [.7, 1],
-  	image: "hamlet_excited.jpg"
-  },
-  {
-  	image: "hamlet_neutral.jpg"
-  }
-  ]
-*/
-["angry","conf","excited","neutral","susp"];
 var states = ["suspicious","excited","confused","angry","neutral","final"];
 
 function preloadStatesEtc(){
