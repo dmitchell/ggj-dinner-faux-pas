@@ -17,6 +17,11 @@ $(document).ready(function(){
     }
     GLOBALS.player = new Player();
     $(".plate.player").click(startItUp);
+    
+    
+    lowLag.init();
+    lowLag.loadLongPlay("sound/Oliver Getz - Fugue In E Minor.mp3");
+    
 });
 
 var running = false;
@@ -29,7 +34,7 @@ function startItUp(){
 	new NPC(actor, GAME_SETUP.npc[actor]);
     }
 
-    
+    lowLag.playLongPlay("sound/Oliver Getz - Fugue In E Minor.mp3",true);    
     // initialize player
     gogogo();    
 }
