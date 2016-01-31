@@ -142,12 +142,20 @@ function clickResponse(){
 
 function dropUtensil(utensil) {
     $("." + utensil + ".player").css({"transform":  "", "z-index": ""});
+    hintPlate(false);
 }
 
 function liftUtensil(utensil, rotateOtherWay) {
     var angle = "30";
     if(rotateOtherWay) angle = "-"+angle;
     $("." + utensil + ".player").css({"transform": "skewX("+angle+"deg)", "z-index": 500});
+    hintPlate(true);
+}
+
+
+function hintPlate(doHint){
+    if(doHint) $(".plate.player").addClass("hint");
+    else  $(".plate.player").removeClass("hint");
 }
 
 function eatFood() {

@@ -97,6 +97,15 @@ body {
 	
 }
 
+.plate.player:hover {
+	background-color: yellow;	
+}
+
+.plate.player.hint {
+	background-color: yellow;		
+}
+
+
 .plate.npc {
 	width:91px;
 	height:60px;
