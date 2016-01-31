@@ -29,7 +29,8 @@ Player.prototype.speak = function(target, emoticon) {
 
     var speaker = GLOBALS.npcs[target];
     var topic = speaker.topic;
-    
+    speaker.topic = null; // clear topic
+
     speechDecl = speechDecl[topic];
     if (speechDecl == undefined) return;
 
