@@ -20,6 +20,10 @@ Player.prototype.perform = function(selection) {
 			liftUtensil(this.utensil);
 		    } else {
 			GLOBALS.npcs[target].react(op.effect[target]);
+			// HARDCODING :-)
+			if (selection == "food") {
+			    eatFood(selection);
+			}
 		    }
 		}
 	    }

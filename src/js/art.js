@@ -88,7 +88,7 @@ function displayCourse(courseName){
         
     }
     var $playerplate = $(".plate.player");
-    var $food = $("<div class='food player eaten "+foodName+"'></div>");   
+    var $food = $("<div class='food player  "+foodName+"'></div>");   
             $food.css("top",$playerplate.css("top"));
         $food.css("left",$playerplate.css("left"));
         $stage.append($food);
@@ -143,6 +143,11 @@ function dropUtensil(utensil) {
 function liftUtensil(utensil) {
     $("." + utensil + ".player").css({"transform": "skewX(-30deg)", "z-index": 500});
 }
+
+function eatFood() {
+    $(".food.player").addClass("eaten");
+}
+
 
 function clickStage(e){
     var cssClass = $(this).attr("class");
