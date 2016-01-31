@@ -10,7 +10,7 @@ Player.prototype.perform = function(selection) {
     if (ops != undefined) {
 	for (var idx in ops) {
 	    var op = ops[idx];
-	    if (in_course(op.course) && this.holding_utensil(op.utensil)) {
+	    if (in_course(op.course) && this.holding_utensil(op)) {
 		for (var target in op.effect) {
 		    if (target == "utensil") {
 			if (this.utensil != undefined) {
@@ -58,8 +58,8 @@ Player.prototype.course = function(course) {
     this.utensil = null;
 }
 
-Player.prototype.holding_utensil = function(needed) {
-    return (needed == undefined || this.utensil == needed);
+Player.prototype.holding_utensil = function(op) {
+    return (!op.hasOwnProperty("utensil") || this.utensil == op.utensil);
 }
 
 // when NPC does action, it enables/disables response options by setting topic, speaker, and utensil
