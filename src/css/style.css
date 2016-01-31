@@ -42,7 +42,7 @@ body {
 
 
 #claudius{
-	background-image:url(claudius-start.png);
+	/*background-image:url(claudius-start.png);*/
 	top:210px;
 	left:150px;
 	width:233px;
@@ -51,7 +51,7 @@ body {
 	
 }
 #gertrude{
-	background-image:url(gertrude-start.png);		
+	/*background-image:url(gertrude-start.png);	*/	
 	top:210px;
 	left:370px;
 	width:311px;
@@ -61,13 +61,13 @@ body {
 #hamlet{
 	width:205px;
 	height:600px;	
-	background-image:url(hamlet-start.png);
+	/*background-image:url(hamlet-start.png);*/
 	background-size: 205px 600px;
 	top:210px;
 	left:600px;
 }
 #ophelia{
-	background-image:url(ophelia-start.png);
+	/*background-image:url(ophelia-start.png);*/
 	top:240px;
 	left:0px;
 	width:198px;

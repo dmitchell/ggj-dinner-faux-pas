@@ -22,6 +22,11 @@ var courseFood = {
 function showState(cmd){
     console.log("in art showState");
     console.log(cmd);
+    
+    var mood = mapHappyAndClarityToImageState(cmd.happy,cmd.clarity);
+    $("#"+cmd.name).css("background-image","url(css/people/"+cmd.name+"_"+mood+".png)");
+    //cmd.happy;
+    //cmd.clarity;
 }
 
 function showAction(cmd){
@@ -137,4 +142,39 @@ function clickStage(e){
     }
 }
 
+function mapHappyAndClarityToImageState(happy,clarity){
+    if(happy < .05) return "final"; //this is a special case very close to the end state
+    if(happy < .4 && clarity < .4) return "angry";
+    if(happy > .7 && clarity < .4) return "confused";
+    if(happy < .4 && clarity > .7) return "suspicious";
+    if(happy > .7 && clarity > .7) return "excited";
+    return "neutral";
+}
 
+/*
+
+ {
+    happy: [0, .4],
+    clarity: [0, .4],
+    image: "hamlet_angry.jpg"
+  },
+  {
+  	happy: [.7, 1],
+  	clarity: [0, .4],
+  	image: "hamlet_confused.jpg"
+  },
+  {
+  	happy: [0, .4],
+  	clarity: [.7, 1],
+  	image: "hamlet_suspicious.jpg"
+  },
+  {
+  	happy: [.7, 1],
+  	clarity: [.7, 1],
+  	image: "hamlet_excited.jpg"
+  },
+  {
+  	image: "hamlet_neutral.jpg"
+  }
+  ]
+*/
