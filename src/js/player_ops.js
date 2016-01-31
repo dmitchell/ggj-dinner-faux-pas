@@ -189,16 +189,16 @@ var PLAYER_OPS = {
 	claudius: {
 	      ent: { 
 	          excited: {
-        	    claudius: [0.1, 0]
+        	    claudius: [-0.1, 0]
 	          },
 	          confused: {
-	              claudius: [-0.1, 0]
+	              claudius: [0.1, 0]
 	          },
 	          neutral: {
-	              claudius: [0, 0.1]
+	              claudius: [0.1, 0]
 	          },
 	          suspicious: {
-	              claudius: [-0.1, 0]
+	              claudius: [0, 0.1]
 	          },
 	          angry: {
 	              claudius: [0, -0.1]
@@ -206,50 +206,50 @@ var PLAYER_OPS = {
 	      },
 	      family: {
 	            excited: {
-	                claudius: [-0.1, 0]
-	            },
-	            confused: {
-	                claudius: [0, 0.1]
-	            },
-	            neutral: {
 	                claudius: [0, -0.1]
 	            },
+	            confused: {
+	                claudius: [-0.1, 0]
+	            },
+	            neutral: {
+	                claudius: [0.1, 0]
+	            },
 	            suspicious: {
-	                claudius: [0, 0.1]
+	                claudius: [0, -0.1]
 	            },
 	            angry: {
-	                claudius: [0.1, 0]
+	                claudius: [0, 0.1]
 	            }
 	        },
 	        food: {
 	            excited: {
-	                claudius: [0, 0.1]
+	                claudius: [-0.1, 0]
 	            },
 	            confused: {
 	                claudius: [0.1, 0]
 	            },
 	            neutral: {
-	                claudius: [-0.1, 0]
+	                claudius: [0, 0.1]
 	            },
 	            suspicious: {
-	                claudius: [0.1, 0]
+	                claudius: [0, -0.1]
 	            },
 	            angry: {
-	                claudius: [0, -0.1]
+	                claudius: [-0.1, 0]
 	            }
 	        },
 	        gov: {
 	            excited: {
-	                claudius: [-0.1, 0]
+	                claudius: [0.1, 0]
 	            },
 	            confused: {
-	                claudius: [0, -0.1]
+	                claudius: [-0.1, 0]
 	            },
 	            neutral: {
-	                claudius: [0, 0.1]
+	                claudius: [0, -0.1]
 	            },
 	            suspicious: {
-	                claudius: [0.1, 0]
+	                claudius: [-0.1, 0]
 	            },
 	            angry: {
 	                claudius: [0, 0.1]
@@ -257,7 +257,7 @@ var PLAYER_OPS = {
 	        },
 	        occult: {
 	            excited: {
-	                claudius: [0.1, 0]
+	                claudius: [-0.1, 0]
 	            },
 	            confused: {
 	                claudius: [0, 0.1]
@@ -266,51 +266,51 @@ var PLAYER_OPS = {
 	                claudius: [0, -0.1]
 	            },
 	            suspicious: {
-	                claudius: [0, -0.1]
+	                claudius: [0.1, 0]
 	            },
 	            angry: {
-	                claudius: [-0.1, 0]
+	                claudius: [0.1, 0]
 	            }
 	        },
 	        travel: {
 	            excited: {
-	                claudius: [0, -0.1]
-	            },
-	            confused: {
-	                claudius: [0.1, 0]
-	            },
-	            neutral: {
-	                claudius: [0.1, 0]
-	            },
-	            suspicious: {
 	                claudius: [0, 0.1]
 	            },
-	            angry: {
+	            confused: {
+	                claudius: [0, -0.1]
+	            },
+	            neutral: {
 	                claudius: [-0.1, 0]
+	            },
+	            suspicious: {
+	                claudius: [-0.1, 0]
+	            },
+	            angry: {
+	                claudius: [0.1, 0]
 	            }
 	        }
 	},
 	ophelia: {
 	      ent: { 
 	          excited: {
-        	    ophelia: [0.1, 0]
+        	    ophelia: [0, -0.1]
 	          },
 	          confused: {
-	              ophelia: [-0.1, 0]
+	              ophelia: [0.1, 0]
 	          },
 	          neutral: {
-	              ophelia: [0, 0.1]
-	          },
-	          suspicious: {
 	              ophelia: [-0.1, 0]
 	          },
-	          angry: {
+	          suspicious: {
 	              ophelia: [0, -0.1]
+	          },
+	          angry: {
+	              ophelia: [0, 0.1]
 	          }
 	      },
 	      family: {
 	            excited: {
-	                ophelia: [-0.1, 0]
+	                ophelia: [0.1, 0]
 	            },
 	            confused: {
 	                ophelia: [0, 0.1]
@@ -319,10 +319,10 @@ var PLAYER_OPS = {
 	                ophelia: [0, -0.1]
 	            },
 	            suspicious: {
-	                ophelia: [0, 0.1]
+	                ophelia: [-0.1, 0]
 	            },
 	            angry: {
-	                ophelia: [0.1, 0]
+	                ophelia: [0, -0.1]
 	            }
 	        },
 	        food: {
@@ -330,13 +330,13 @@ var PLAYER_OPS = {
 	                ophelia: [0, 0.1]
 	            },
 	            confused: {
-	                ophelia: [0.1, 0]
-	            },
-	            neutral: {
 	                ophelia: [-0.1, 0]
 	            },
-	            suspicious: {
+	            neutral: {
 	                ophelia: [0.1, 0]
+	            },
+	            suspicious: {
+	                ophelia: [0, 0.1]
 	            },
 	            angry: {
 	                ophelia: [0, -0.1]
@@ -344,157 +344,157 @@ var PLAYER_OPS = {
 	        },
 	        gov: {
 	            excited: {
-	                ophelia: [-0.1, 0]
-	            },
-	            confused: {
 	                ophelia: [0, -0.1]
 	            },
-	            neutral: {
+	            confused: {
 	                ophelia: [0, 0.1]
 	            },
-	            suspicious: {
+	            neutral: {
 	                ophelia: [0.1, 0]
 	            },
+	            suspicious: {
+	                ophelia: [0, -0.1]
+	            },
 	            angry: {
-	                ophelia: [0, 0.1]
+	                ophelia: [-0.1, 0]
 	            }
 	        },
 	        occult: {
 	            excited: {
-	                ophelia: [0.1, 0]
-	            },
-	            confused: {
 	                ophelia: [0, 0.1]
 	            },
+	            confused: {
+	                ophelia: [0.1, 0]
+	            },
 	            neutral: {
-	                ophelia: [0, -0.1]
+	                ophelia: [0, 0.1]
 	            },
 	            suspicious: {
-	                ophelia: [0, -0.1]
+	                ophelia: [-0.1, 0]
 	            },
 	            angry: {
-	                ophelia: [-0.1, 0]
+	                ophelia: [0, -0.1]
 	            }
 	        },
 	        travel: {
 	            excited: {
-	                ophelia: [0, -0.1]
+	                ophelia: [-0.1, 0]
 	            },
 	            confused: {
-	                ophelia: [0.1, 0]
+	                ophelia: [0, -0.1]
 	            },
 	            neutral: {
-	                ophelia: [0.1, 0]
-	            },
-	            suspicious: {
 	                ophelia: [0, 0.1]
 	            },
+	            suspicious: {
+	                ophelia: [0.1, 0]
+	            },
 	            angry: {
-	                ophelia: [-0.1, 0]
+	                ophelia: [0.1, 0]
 	            }
 	        }
 	},
 	gertrude: {
 	      ent: { 
 	          excited: {
-        	    gertrude: [0.1, 0]
+        	    gertrude: [0, -0.1]
 	          },
 	          confused: {
-	              gertrude: [-0.1, 0]
-	          },
-	          neutral: {
 	              gertrude: [0, 0.1]
 	          },
-	          suspicious: {
+	          neutral: {
 	              gertrude: [-0.1, 0]
 	          },
+	          suspicious: {
+	              gertrude: [0.1, 0]
+	          },
 	          angry: {
-	              gertrude: [0, -0.1]
+	              gertrude: [0, 0.1]
 	          }
 	      },
 	      family: {
 	            excited: {
-	                gertrude: [-0.1, 0]
+	                gertrude: [0, 0.1]
 	            },
 	            confused: {
-	                gertrude: [0, 0.1]
+	                gertrude: [-0.1, 0]
 	            },
 	            neutral: {
 	                gertrude: [0, -0.1]
 	            },
 	            suspicious: {
-	                gertrude: [0, 0.1]
+	                gertrude: [0.1, 0]
 	            },
 	            angry: {
-	                gertrude: [0.1, 0]
+	                gertrude: [-0.1, 0]
 	            }
 	        },
 	        food: {
 	            excited: {
-	                gertrude: [0, 0.1]
+	                gertrude: [0.1, 0]
 	            },
 	            confused: {
-	                gertrude: [0.1, 0]
+	                gertrude: [0, -0.1]
 	            },
 	            neutral: {
-	                gertrude: [-0.1, 0]
+	                gertrude: [0, 0.1]
 	            },
 	            suspicious: {
-	                gertrude: [0.1, 0]
+	                gertrude: [-0.1, 0]
 	            },
 	            angry: {
-	                gertrude: [0, -0.1]
+	                gertrude: [-0.1, 0]
 	            }
 	        },
 	        gov: {
 	            excited: {
-	                gertrude: [-0.1, 0]
+	                gertrude: [0, 0.1]
 	            },
 	            confused: {
-	                gertrude: [0, -0.1]
-	            },
-	            neutral: {
-	                gertrude: [0, 0.1]
-	            },
-	            suspicious: {
 	                gertrude: [0.1, 0]
 	            },
+	            neutral: {
+	                gertrude: [0.1, 0]
+	            },
+	            suspicious: {
+	                gertrude: [-0.1, 0]
+	            },
 	            angry: {
-	                gertrude: [0, 0.1]
+	                gertrude: [0, -0.1]
 	            }
 	        },
 	        occult: {
 	            excited: {
-	                gertrude: [0.1, 0]
+	                gertrude: [-0.1, 0]
 	            },
 	            confused: {
-	                gertrude: [0, 0.1]
+	                gertrude: [0.1, 0]
 	            },
 	            neutral: {
 	                gertrude: [0, -0.1]
 	            },
 	            suspicious: {
-	                gertrude: [0, -0.1]
+	                gertrude: [0, 0.1]
 	            },
 	            angry: {
-	                gertrude: [-0.1, 0]
+	                gertrude: [0.1, 0]
 	            }
 	        },
 	        travel: {
 	            excited: {
-	                gertrude: [0, -0.1]
+	                gertrude: [0.1, 0]
 	            },
 	            confused: {
-	                gertrude: [0.1, 0]
-	            },
-	            neutral: {
-	                gertrude: [0.1, 0]
-	            },
-	            suspicious: {
 	                gertrude: [0, 0.1]
 	            },
-	            angry: {
+	            neutral: {
 	                gertrude: [-0.1, 0]
+	            },
+	            suspicious: {
+	                gertrude: [0, -0.1]
+	            },
+	            angry: {
+	                gertrude: [0, -0.1]
 	            }
 	        }
 	}
