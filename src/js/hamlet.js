@@ -1,8 +1,8 @@
 var GAME_SETUP = 
 {npc:{ 
  hamlet: 
-   {happy: .65, // starting value scale 0..1
-    clarity: .3,
+   {happy: .55, // starting value scale 0..1
+    clarity: .25,
     operations: {
 	anytime: {
 	    dagger_all: {
@@ -100,8 +100,8 @@ var GAME_SETUP =
   ]
  },
  claudius: 
-   {happy: .6, // starting value scale 0..1
-    clarity: .9,
+   {happy: .55, // starting value scale 0..1
+    clarity: .85,
     operations: {
 	anytime: {
 	    dagger_all: {
@@ -195,8 +195,8 @@ var GAME_SETUP =
   ]
  },
  ophelia: 
-   {happy: .7, // starting value scale 0..1
-    clarity: .5,
+   {happy: .55, // starting value scale 0..1
+    clarity: .45,
     operations: {
 	anytime: {
 	    dagger_all: {
@@ -290,8 +290,8 @@ var GAME_SETUP =
   ]
  },
  gertrude: 
-   {happy: .6, // starting value scale 0..1
-    clarity: .9,
+   {happy: .55, // starting value scale 0..1
+    clarity: .8,
     operations: {
 	anytime: {
 	    dagger_all: {
