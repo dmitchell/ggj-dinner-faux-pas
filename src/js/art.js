@@ -157,6 +157,7 @@ function clickStage(e){
     if (playerIdx > 0) {
 	GLOBALS.player.perform(cssClass.substring(0, playerIdx).trimRight());
     }
+    event.stopPropagation();
 }
 
 function mapHappyAndClarityToImageState(happy,clarity){
