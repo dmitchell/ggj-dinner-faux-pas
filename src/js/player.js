@@ -17,7 +17,7 @@ Player.prototype.perform = function(selection) {
 			    dropUtensil(this.utensil);
 			}
 			this.utensil = op.effect[target];
-			liftUtensil(this.utensil);
+			liftUtensil(this.utensil, (selection=="fork"));
 		    } else {
 			GLOBALS.npcs[target].react(op.effect[target]);
 		    }

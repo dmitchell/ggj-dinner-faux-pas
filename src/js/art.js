@@ -140,8 +140,10 @@ function dropUtensil(utensil) {
     $("." + utensil + ".player").css({"transform":  "", "z-index": ""});
 }
 
-function liftUtensil(utensil) {
-    $("." + utensil + ".player").css({"transform": "skewX(-30deg)", "z-index": 500});
+function liftUtensil(utensil, rotateOtherWay) {
+    var angle = "30";
+    if(rotateOtherWay) angle = "-"+angle;
+    $("." + utensil + ".player").css({"transform": "skewX("+angle+"deg)", "z-index": 500});
 }
 
 function clickStage(e){

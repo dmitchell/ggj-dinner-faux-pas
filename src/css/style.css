@@ -412,6 +412,12 @@ transform:rotate(160deg);
 .speechballoon div:hover {
 	background-color:yellow;
 }
+.spoon.player:hover, .fork.player:hover, .knife.player:hover{
+	background-color:yellow;
+}
+.spoon, .fork, .knife{
+	border-radius:40px;
+}
 
 .speechballoon div.angry{
 	background-image: url(speech/speech_angry.png);
