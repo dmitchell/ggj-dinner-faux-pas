@@ -1,9 +1,9 @@
 end game
-* art for each NPC
-** Hamlet: raised sword toward Claudius
-** Claudius: raised sword toward Hamlet
-** Gertrude: knife at player
-** Ophelia: suicide
+* clear speech balloons
 
-start screen
+toggle utensils
+
+make food clickability more obvious
+
+npc reaction to delta
 
