@@ -224,7 +224,7 @@ function endGame(rage_master) {
 	msg = "Gertrude killed you for being rude";
 	break;
     } 
-    $("#stage").append(msg);
+    $("#stage").append("<h1>"+msg+"</h1>");
 }
 
 

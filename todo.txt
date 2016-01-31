@@ -7,4 +7,3 @@ end game
 
 start screen
 
-All animation
