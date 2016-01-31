@@ -180,3 +180,35 @@ function mapHappyAndClarityToImageState(happy,clarity){
   }
   ]
 */
+["angry","conf","excited","neutral","susp"];
+var states = ["suspicious","excited","confused","angry","neutral","final"];
+
+function preloadStatesEtc(){
+    var images = [];
+    
+    for(var name in heads){
+        for(var i = 0; i < states.length; i++){
+            var res = states[i];
+            images.push("people/"+name+"_"+res+".png");
+    }
+    preload(images,"css/");
+    }
+}
+
+function preload(sources, prefix)
+{
+  var images = [];
+  for (var i = 0; i < sources.length; ++i) {
+    images[i] = new Image();
+ var src = sources[i];
+ if(prefix != undefined){
+   src = prefix + src;
+ }
+    images[i].src = src;
+  }
+}
+
+
+
+
+$(preloadStatesEtc); //preload images on boot
