@@ -21,6 +21,7 @@ $(document).ready(function(){
     
     lowLag.init({"force":"audioTag"});
     lowLag.loadLongPlay("sound/Oliver Getz - Fugue In E Minor.mp3");
+    lowLag.loadLongPlay("sound/Dinner Party Failure.mp3");    
     
 });
 
