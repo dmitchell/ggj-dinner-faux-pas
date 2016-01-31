@@ -29,11 +29,20 @@ function showAction(cmd){
     console.log(cmd);
     if (cmd.target == "all") return;  // temporary hack to enable testing
     if(cmd.actiontype == "dagger"){
-        throwSomething("dagger",true,heads[cmd.source].x,heads[cmd.source].y,heads[cmd.target].x,heads[cmd.target].y);                        
+        throwSomething("dagger",true,heads[cmd.source].x,heads[cmd.source].y,heads[cmd.target].x,heads[cmd.target].y);
+        return;
     }
     if(cmd.actiontype == "heart"){
-        throwSomething("heart",false,heads[cmd.source].x,heads[cmd.source].y,heads[cmd.target].x,heads[cmd.target].y);                        
+        throwSomething("heart",false,heads[cmd.source].x,heads[cmd.source].y,heads[cmd.target].x,heads[cmd.target].y);
+        return;
     }
+    if(cmd.actiontype == "talk"){
+        displaySpeech(cmd.source,cmd.topic);
+        return;
+    }
+    console.log("Unhandle daction:");
+    console.log(cmd);
+    
     //speak, source, topic
 }
 
@@ -127,7 +136,5 @@ function clickStage(e){
 	GLOBALS.player.perform(cssClass.substring(0, playerIdx).trimRight());
     }
 }
-    $(function(){
-       displaySpeech("ophelia","travel"); 
-    });
+
 
