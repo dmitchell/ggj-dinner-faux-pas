@@ -87,6 +87,7 @@ function displayCourse(courseName){
         $stage.append($food);
         
     }
+    GLOBALS.eaten = 6;
     var $playerplate = $(".plate.player");
     var $food = $("<div class='food player  "+foodName+"'></div>");   
             $food.css("top",$playerplate.css("top"));
@@ -147,7 +148,13 @@ function liftUtensil(utensil, rotateOtherWay) {
 }
 
 function eatFood() {
-    $(".food.player").addClass("eaten");
+    GLOBALS.eaten--;
+    console.log(GLOBALS.eaten);
+    if (GLOBALS.eaten > 0) {
+	$(".food.player").addClass("eaten");
+    } else {
+	$(".food.player").remove();
+    }
 }
 
 
