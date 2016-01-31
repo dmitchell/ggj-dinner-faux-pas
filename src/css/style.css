@@ -93,6 +93,7 @@ body {
 	top:550px;
 	left:220px;
 	z-index:162;
+	cursor: pointer;
 	
 }
 
@@ -443,6 +444,9 @@ transform:rotate(160deg);
 	left:120px;
 }
 
-
+.texty{
+	font-size:25px;
+	padding:20px;
+}
 
 
