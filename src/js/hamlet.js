@@ -31,7 +31,7 @@ var GAME_SETUP =
 	    	p: 1/13,
 	    	actiontype: "dagger",
 	    	target: "hamlet",
-	    	effect: {hamlet: [-0.015, -0.015]
+	    	effect: {hamlet: [-0.015, -0.015]}
 	    },
 	    dagger_self2: {
 	    	happy: [.4, .7],
@@ -134,7 +134,7 @@ var GAME_SETUP =
 	    	p: 1/15,
 	    	actiontype: "dagger",
 	    	target: "claudius",
-	    	effect: {claudius: [-0.01, -0.01]
+	    	effect: {claudius: [-0.01, -0.01]}
 	    },
 	    dagger_self2: {
 	    	happy: [.4, .7],
@@ -237,7 +237,7 @@ var GAME_SETUP =
 	    	p: 1/10,
 	    	actiontype: "dagger",
 	    	target: "ophelia",
-	    	effect: {ophelia: [-0.015, -0.015]
+	    	effect: {ophelia: [-0.015, -0.015]}
 	    },
 	    dagger_self2: {
 	    	happy: [.4, .7],
@@ -340,7 +340,7 @@ var GAME_SETUP =
 	    	p: 1/15,
 	    	actiontype: "dagger",
 	    	target: "gertrude",
-	    	effect: {gertrude: [-0.01, -0.01]
+	    	effect: {gertrude: [-0.01, -0.01]}
 	    },
 	    dagger_self2: {
 	    	happy: [.4, .7],
