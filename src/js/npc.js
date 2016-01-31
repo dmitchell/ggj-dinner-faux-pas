@@ -37,6 +37,7 @@ NPC.prototype.moveInternal = function(phase) {
 		if (this.topic != null) continue;
 
 		this.topic = op.topic = this.topics[Math.floor(Math.random() * 6)];
+		listLog(this.name + " says " + this.topic);
 	    }
 	    // invoke graphics (use target property)
 	    showAction(op);
