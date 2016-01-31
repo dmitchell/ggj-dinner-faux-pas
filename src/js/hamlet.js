@@ -75,6 +75,7 @@ var GAME_SETUP =
 		happy: [.6, 1.0],
 		clarity: [0, 1.0],  // anytime
 		p: 1/(60 * 3), // once every 3 mins
+		actiontype: "toast",
 		target: "all",
 		effect: {ophelia: [0.1, 0], claudius: [0.05, 0], gertrude: [0.1, 0], hamlet: [0.05, 0]}
 	    }
@@ -178,6 +179,7 @@ var GAME_SETUP =
 		happy: [.6, 1.0],
 		clarity: [0, 1.0],  // anytime
 		p: 1/(60 * 3), // once every 3 mins
+		actiontype: "toast",
 		target: "all",
 		effect: {ophelia: [0.1, 0], claudius: [0.05, 0], gertrude: [0.1, 0], hamlet: [0.05, 0]}
 	    }
@@ -281,6 +283,7 @@ var GAME_SETUP =
 		happy: [.6, 1.0],
 		clarity: [0, 1.0],  // anytime
 		p: 1/(60 * 3), // once every 3 mins
+		actiontype: "toast",
 		target: "all",
 		effect: {ophelia: [0.05, 0], claudius: [0.1, 0], gertrude: [0.05, 0], hamlet: [0.1, 0]}
 	    }
@@ -384,6 +387,7 @@ var GAME_SETUP =
 		happy: [.6, 1.0],
 		clarity: [0, 1.0],  // anytime
 		p: 1/(60 * 3), // once every 3 mins
+		actiontype: "toast",
 		target: "all",
 		effect: {ophelia: [0.05, 0], claudius: [0.1, 0], gertrude: [0.05, 0], hamlet: [0.1, 0]}
 	    }
