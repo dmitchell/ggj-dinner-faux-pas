@@ -15,14 +15,23 @@ $(document).ready(function(){
 	    listLog("set course to " + course);
 	}
     }
+    GLOBALS.player = new Player();
+    $(".plate.player").click(startItUp);
+});
+
+var running = false;
+function startItUp(){
+    if(running) return;
+    running = true;
     // initialize npcs
     for (var actor in GAME_SETUP.npc) {
 	new NPC(actor, GAME_SETUP.npc[actor]);
     }
-    GLOBALS.player = new Player();
+    
     // initialize player
-    gogogo();
-});
+    gogogo();    
+}
+
 
 
 function gogogo(){
