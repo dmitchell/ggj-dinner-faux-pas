@@ -108,8 +108,8 @@ function displaySpeech(who,topic){
     for(var i = 0; i < responses.length; i++){
         var r = responses[i];
         var $res = $("<div class='"+r+"'></div>");
-        $res.data("who",who)
-        $res.click(clickResponse)
+        $res.data("who",who);
+        $res.click(clickResponse);
         $balloon.append($res);
     }
     
